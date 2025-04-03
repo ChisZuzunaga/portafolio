@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./fonts/proximanova_regular.ttf') format('truetype'),
+       url('./fonts/proximanova_bold.otf') format('opentype'),
+       url('./fonts/proximanova_light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@import "tailwindcss";
+
+:root {
+  --primary_black: #151922;
+  --background_black: #323441;
+  --secondary_blue: #007AFF;
+  --white: #FFFFFF;
+  --light: 300;
+  --regular: 400;
+  --bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Proxima Nova';
+}
+
+body{
+  width: 100%;
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  z-index: 10001;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+li > a {
+  font-size: 18px;
+  font-weight: var(--regular);
+}
+
+nav ul li a{
+  color: var(--white);
+  margin: 0 10px;
+}
+
+nav ul li a:hover{
+  text-decoration: underline solid var(--background_black);
+}
+
+.socials-logos:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: var(--bold);
+  color: var(--white);
+}
+
+.navbar {
+  padding: 25px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary_black);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 5px 0;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 89px;
+  right: 0;
+  width: 100%;
+  background-color: var(--background_black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  nav ul li a{
+    color: var(--white);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: var(--bold);
+  }
+  
+  .navbar{
+    background: var(--primary_black);
+    padding: 30px 8%;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-icon.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  li > a {
+    font-size: 16px;
+    font-weight: var(--regular);
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 89px;
+    right: 0;
+    width: 100%;
+    background-color: var(--background_black);
+    overflow: hidden;
+    max-height: 0; /* Inicialmente oculto */
+    opacity: 0;
+    padding: 0;  /* Asegura que no ocupe espacio antes de abrir */
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  .nav-links.visible {
+    max-height: 500px; /* Ajusta según el contenido */
+    opacity: 1;
+    padding: 20px 0; /* Se expande solo cuando está visible */
+  }
+
+  nav ul li a:hover{
+    text-decoration: underline solid var(--primary_black);
+  }
+}
