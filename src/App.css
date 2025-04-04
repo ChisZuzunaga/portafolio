@@ -33,6 +33,7 @@
   margin-bottom: 15px;
 }
 
+
 /* Aplica la clase solo en pantallas medianas y superiores */
 @media (min-width: 768px) {
   .ml-230px-md {
@@ -51,12 +52,19 @@
     margin-top: 100px;
   }
 
+  .mt-0px-md {
+    margin-top: 0px;
+  }
   .mt-45px-md {
     margin-top: 45px;
   }
 
   .md-pt-custom-15px {
     padding-top: 15px;
+  }
+
+  .mt-100px-md-custom {
+    margin-top: 100px;
   }
 }
 
@@ -73,8 +81,11 @@
   .pt-custom-40px {
     margin-top: 40px;
   }
-}
 
+  .mt-100px-md-custom {
+    margin-top: 150px;
+  }
+}
 
 * {
   margin: 0;
@@ -130,18 +141,6 @@ nav ul li a:hover{
   background-color: var(--primary_black);
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: var(--white);
-  margin: 5px 0;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -158,9 +157,23 @@ nav ul li a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 999;  
 }
 
-@media screen and (max-width: 768px){
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 5px 0;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 991px){
   nav ul li a{
     color: var(--white);
   }
@@ -210,7 +223,7 @@ nav ul li a:hover{
     max-height: 0; /* Inicialmente oculto */
     opacity: 0;
     padding: 0;  /* Asegura que no ocupe espacio antes de abrir */
-    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: max-height 0.2s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
   }
 
   .nav-links.visible {

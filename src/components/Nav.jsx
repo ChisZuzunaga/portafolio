@@ -22,12 +22,14 @@ const socials = [
     }
 ]; 
 
-const Nav = () => { 
+const Nav = ({ onMenuToggle }) => { 
     const [menuOpen, setMenuOpen] = useState(false);    
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    }
+        const newState = !menuOpen;
+        setMenuOpen(newState);
+        onMenuToggle(newState); // <--- Notificar al padre
+    };
 
     return ( 
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>

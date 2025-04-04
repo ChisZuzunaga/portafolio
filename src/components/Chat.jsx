@@ -17,7 +17,7 @@ const Chat = () => {
     const timeouts = initialMessages.map((message, index) => {
       return setTimeout(() => {
         setDisplayedMessages(prev => [...prev, message]);
-      }, index * 2000); // 2 segundos entre mensajes
+      }, index * 1000); // 2 segundos entre mensajes
     });
 
     return () => timeouts.forEach(timeout => clearTimeout(timeout));
@@ -46,9 +46,8 @@ const Chat = () => {
         )}
         
         {message.gif && (
-            
-            <div className="max-w-3xs md:max-w-xs rounded-xl overflow-hidden mb-custom-15px mb-2 animate-fadeIn chat-bubble-left md-l-20px">
-            <img src={message.gif} alt="GIF" className="w-full" />
+            <div className="chat-bubble-left md-l-20px max-w-2xs md:max-w-xs animate-fadeIn rounded-br-none mb-custom-15px mb-2">
+            <img src={message.gif} alt="GIF" className="w-full rounded-xl" />
             </div>
         )}
         </div>
