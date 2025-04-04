@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url('./fonts/proximanova_regular.ttf') format('truetype'),
@@ -7,6 +8,11 @@
   font-style: normal;
 }
 @import "tailwindcss";
+
+.bg-hero {
+  background-image: url('./assets/Background_hero.svg');
+  background-size: cover;
+}
 
 :root {
   --primary_black: #151922;
@@ -84,6 +90,11 @@
 
   .mt-100px-md-custom {
     margin-top: 150px;
+  }
+
+  .bg-hero {
+    background-image: url('./assets/Background_mini_hero.svg');
+    background-size: cover;
   }
 }
 

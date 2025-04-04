@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Chat from './Chat';
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 p-4">
+    <section className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 p-4 bg-hero">
         <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px">
             <header className="text-black text-3xl md:text-4xl font-regular">
                 <h1>
