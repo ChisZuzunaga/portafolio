@@ -46,7 +46,7 @@ const Chat = () => {
         )}
         
         {message.gif && (
-            <div className="chat-bubble-left md-l-20px max-w-2xs md:max-w-xs animate-fadeIn rounded-br-none mb-custom-15px mb-2">
+            <div className="chat-bubble-left md-l-20px max-w-2xs md:max-w-2xs animate-fadeIn rounded-br-none mb-custom-15px mb-2">
             <img src={message.gif} alt="GIF" className="w-full rounded-xl" />
             </div>
         )}

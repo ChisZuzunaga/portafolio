@@ -18,7 +18,7 @@ const Projects = () => {
       <article className="ml-230px-md mr-230px-md ml-mr-60px">
         {/* Grid de proyectos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {projectsData.slice(0, 3).map((project) => (
+          {projectsData.map((project) => (
             <div
               key={project.id}
               className="bg-white shadow-md rounded-xl overflow-hidden p-10px"

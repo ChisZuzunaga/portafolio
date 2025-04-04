@@ -21,8 +21,19 @@
   --white: #FFFFFF;
 }
 
+.pt-10px {
+  padding-top: 10px;
+}
+.p-10px {
+  padding: 10px;
+}
+
 .text-secondary-blue {
   color: var(--secondary_blue);
+}
+
+.text-gray {
+  color: #757575;
 }
 
 .ptb-custom-13px {
@@ -39,9 +50,26 @@
   margin-bottom: 15px;
 }
 
+.shadow-inner-top {
+  box-shadow: inset 0px -4px 30px rgba(0, 0, 0, 0.25);
+}
+.pt-custom-90px {
+  padding-top: 90px;
+}
 
+.pb-custom-30px {
+  padding-bottom: 30px;
+}
+
+.pb-bottom-50px {
+  padding-bottom: 50px;
+}
 /* Aplica la clase solo en pantallas medianas y superiores */
 @media (min-width: 768px) {
+  .txt-20-perc {
+    width: 20%;
+  }
+
   .ml-230px-md {
     margin-left: 10vw;
   }
@@ -80,6 +108,27 @@
     margin: 5px;
   }
 
+  .bar-custom {
+    width: 10%;
+  }
+
+  .ml-mr-30px {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .ml-mr-60px {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .pt-custom-90px {
+    padding-top: 50px;
+  }
+
+  .pb-custom-30px {
+    padding-bottom: 50px;
+  }
   .pt-custom-9px {
     padding-top: 9px;
   }
@@ -96,6 +145,17 @@
     background-image: url('./assets/Background_mini_hero.svg');
     background-size: cover;
   }
+}
+
+.bg-projects-custom {
+  background-color: #FAFAFA;
+}
+
+.bar-custom {
+  background-color: #DDDDDD;
+  width: 40%;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 * {

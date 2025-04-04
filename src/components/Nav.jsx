@@ -46,13 +46,13 @@ const Nav = ({ onMenuToggle }) => {
             <div className={`nav-links ${menuOpen ? "visible" : ""}`} >
                 <ul>
                     <li>
-                        <a href="/" className="text-base md:text-lg font-regular">About</a>
+                        <a href="/about" className="text-base md:text-lg font-regular">About</a>
                     </li>
                     <li>
-                        <a href="/" className="text-base md:text-lg font-regular">Portfolio</a>
+                        <a href="/portfolio" className="text-base md:text-lg font-regular">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/" className="text-base md:text-lg font-regular">Contact</a>
+                        <a href="/contact" className="text-base md:text-lg font-regular">Contact</a>
                     </li>
                 </ul>
                 <ul>
