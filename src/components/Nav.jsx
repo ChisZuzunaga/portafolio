@@ -32,7 +32,7 @@ const Nav = () => {
     return ( 
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
             <a href="/" className="logo">
-                <p>Chis Zuzunaga</p>
+                <p className="text-2xl md:text-4xl font-bold">Chis Zuzunaga</p>
             </a>
 
             <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
@@ -44,13 +44,13 @@ const Nav = () => {
             <div className={`nav-links ${menuOpen ? "visible" : ""}`} >
                 <ul>
                     <li>
-                        <a href="/">About</a>
+                        <a href="/" className="text-base md:text-lg font-regular">About</a>
                     </li>
                     <li>
-                        <a href="/">Portfolio</a>
+                        <a href="/" className="text-base md:text-lg font-regular">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <a href="/" className="text-base md:text-lg font-regular">Contact</a>
                     </li>
                 </ul>
                 <ul>

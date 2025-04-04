@@ -5,7 +5,6 @@
        url('./fonts/proximanova_light.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-
 }
 @import "tailwindcss";
 
@@ -14,10 +13,68 @@
   --background_black: #323441;
   --secondary_blue: #007AFF;
   --white: #FFFFFF;
-  --light: 300;
-  --regular: 400;
-  --bold: 700;
 }
+
+.text-secondary-blue {
+  color: var(--secondary_blue);
+}
+
+.ptb-custom-13px {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.plr-custom-12px {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.mb-custom-15px {
+  margin-bottom: 15px;
+}
+
+/* Aplica la clase solo en pantallas medianas y superiores */
+@media (min-width: 768px) {
+  .ml-230px-md {
+    margin-left: 10vw;
+  }
+
+  .mr-230px-md {
+    margin-right: 10vw;
+  }
+
+  .mt-80px-md {
+    margin-top: 80px;
+  }
+
+  .mt-100px-md {
+    margin-top: 100px;
+  }
+
+  .mt-45px-md {
+    margin-top: 45px;
+  }
+
+  .md-pt-custom-15px {
+    padding-top: 15px;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .sm-m-custom-5 {
+    margin: 5px;
+  }
+
+  .pt-custom-9px {
+    padding-top: 9px;
+  }
+
+  .pt-custom-40px {
+    margin-top: 40px;
+  }
+}
+
 
 * {
   margin: 0;
@@ -47,11 +104,6 @@ nav ul li {
   padding: 1em;
 }
 
-li > a {
-  font-size: 18px;
-  font-weight: var(--regular);
-}
-
 nav ul li a{
   color: var(--white);
   margin: 0 10px;
@@ -67,8 +119,6 @@ nav ul li a:hover{
 }
 
 .logo {
-  font-size: 40px;
-  font-weight: var(--bold);
   color: var(--white);
 }
 
@@ -115,11 +165,6 @@ nav ul li a:hover{
     color: var(--white);
   }
 
-  .logo {
-    font-size: 24px;
-    font-weight: var(--bold);
-  }
-  
   .navbar{
     background: var(--primary_black);
     padding: 30px 8%;
@@ -151,11 +196,6 @@ nav ul li a:hover{
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  li > a {
-    font-size: 16px;
-    font-weight: var(--regular);
-  }
-
   .nav-links {
     list-style: none;
     display: flex;
@@ -182,4 +222,89 @@ nav ul li a:hover{
   nav ul li a:hover{
     text-decoration: underline solid var(--primary_black);
   }
+}
+
+.bg-chat-gray {
+  background-color: #E9E9EB;
+}
+/* Para el efecto de escritura en los mensajes */
+.message-text p {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(30) 1s forwards;
+}
+
+/* Para el scroll del chat */
+.chat-container {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f1f1f1;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0;
+  border-radius: 6px;
+}
+
+/* Estilos para las burbujas de chat */
+.chat-bubble-left {
+  position: relative;
+}
+
+.chat-bubble-left::after {
+  content: '';
+  position: absolute;
+  left: -7px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #d6d6d6;
+  border-left: 0;
+  margin-bottom: 8px;
+  z-index: 999;
+}
+
+.chat-bubble-right {
+  position: relative;
+}
+
+.chat-bubble-right::after {
+  content: '';
+  position: absolute;
+  right: -7px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left-color: #005aea; /* Color azul de Tailwind bg-blue-500 */
+  border-right: 0;
+  margin-bottom: 8px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.md-l-20px {
+  margin-left: 20px;
+}
+
+.md-r-20px {
+  margin-right: 20px;
 }
