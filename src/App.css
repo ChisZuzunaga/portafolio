@@ -28,6 +28,22 @@
   padding: 10px;
 }
 
+.bg-footer {
+  background-color: #F5F5F5;
+}
+
+.pdlr-50px {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.p-footer {
+  padding-left: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 100px;
+}
+
 .text-secondary-blue {
   color: var(--secondary_blue);
 }
@@ -104,6 +120,14 @@
 
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .hd-links {
+    display: none;
+  }
+
+  .dp-links {
+    justify-content: center;
+  }
+
   .sm-m-custom-5 {
     margin: 5px;
   }
