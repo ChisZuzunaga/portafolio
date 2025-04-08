@@ -9,6 +9,10 @@
 }
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-hero {
   background-image: url('./assets/Background_hero.svg');
   background-size: cover;
@@ -30,6 +34,18 @@
 
 .bg-footer {
   background-color: #F5F5F5;
+}
+
+.custom-medium-circle {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid #d0d0d0;
+  border-bottom: 0;
+  height: 40px;
+}
+
+.custom-footer {
+  border-top: 2px solid #d0d0d0;
 }
 
 .pdlr-50px {
@@ -80,6 +96,11 @@
 .pb-bottom-50px {
   padding-bottom: 50px;
 }
+
+.pb-bottom-80px {
+  padding-bottom: 80px;
+}
+
 /* Aplica la clase solo en pantallas medianas y superiores */
 @media (min-width: 768px) {
   .txt-20-perc {
@@ -380,6 +401,13 @@ nav ul li a:hover{
   border-left: 0;
   margin-bottom: 8px;
   z-index: 999;
+}
+
+.reaction-bubble {
+  background-color: #007AFF;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
 }
 
 .chat-bubble-right {

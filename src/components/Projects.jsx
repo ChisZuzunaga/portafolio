@@ -4,7 +4,7 @@ import projectsData from '../data/projectsData'; // Importa los datos
 
 const Projects = () => {
   return (
-    <section className="bg-projects-custom py-10 pb-bottom-50px shadow-inner-top">
+    <section id="projects" className="bg-projects-custom py-10 pb-bottom-80px shadow-inner-top">
       {/* Contenedor principal */}
       <article className="text-center pt-custom-90px pb-custom-30px ml-230px-md mr-230px-md ml-mr-30px">
         <div className="flex items-center justify-center ">
@@ -17,7 +17,7 @@ const Projects = () => {
       </article>
       <article className="ml-230px-md mr-230px-md ml-mr-60px">
         {/* Grid de proyectos */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
           {projectsData.slice(0, 3).map((project) => (
             <div
               key={project.id}

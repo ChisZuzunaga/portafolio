@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { 
     faGithub, 
     faInstagram, 
-    faLinkedin
+    faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"; 
 
 const socials = [
@@ -32,7 +31,7 @@ const Nav = ({ onMenuToggle }) => {
     };
 
     return ( 
-        <nav className={`navbar ${menuOpen ? "open" : ""}`}>
+        <nav id="nav" className={`navbar ${menuOpen ? "open" : ""}`}>
             <a href="/" className="logo">
                 <p className="text-2xl md:text-4xl font-bold">Chis Zuzunaga</p>
             </a>
@@ -46,13 +45,13 @@ const Nav = ({ onMenuToggle }) => {
             <div className={`nav-links ${menuOpen ? "visible" : ""}`} >
                 <ul>
                     <li>
-                        <a href="/about" className="text-base md:text-lg font-regular">About</a>
+                        <a href="/#about" className="text-base md:text-lg font-regular">About</a>
                     </li>
                     <li>
-                        <a href="/portfolio" className="text-base md:text-lg font-regular">Portfolio</a>
+                        <a href="/#portfolio_hero" className="text-base md:text-lg font-regular">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/contact" className="text-base md:text-lg font-regular">Contact</a>
+                        <a href="/#contact" className="text-base md:text-lg font-regular">Contact</a>
                     </li>
                 </ul>
                 <ul>

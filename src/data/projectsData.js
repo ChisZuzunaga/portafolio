@@ -17,6 +17,24 @@ const projectsData = [
       description: "Hecho con Python, Tensorflow y mediaPipe. Este proyecto es un traductor de lengua de señas a texto.",
       image: "https://placehold.co/286x125",
     },
+    {
+      id: 4,
+      title: "Traductor de lengua de señas",
+      description: "Hecho con Python, Tensorflow y mediaPipe. Este proyecto es un traductor de lengua de señas a texto.",
+      image: "https://placehold.co/286x125",
+    },
+    {
+      id: 5,
+      title: "Traductor de lengua de señas",
+      description: "Hecho con Python, Tensorflow y mediaPipe. Este proyecto es un traductor de lengua de señas a texto.",
+      image: "https://placehold.co/286x125",
+    },
+    {
+      id: 6,
+      title: "Traductor de lengua de señas",
+      description: "Hecho con Python, Tensorflow y mediaPipe. Este proyecto es un traductor de lengua de señas a texto.",
+      image: "https://placehold.co/286x125",
+    },
   ];
   
   export default projectsData;

@@ -1,11 +1,11 @@
 import React from 'react';
-import Chat from './Chat';
+import Chat_Home from './Chats/Chat_Home';
 import Projects from './Projects';
 
-const Hero = () => {
+const Home_Hero = () => {
   return (
     <>
-        <section className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 bg-hero pb-bottom-50px">
+        <section id="home_hero" className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 bg-hero pb-bottom-50px">
             <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px">
                 <header className="text-black text-3xl md:text-4xl font-regular">
                     <h1>
@@ -18,7 +18,7 @@ const Hero = () => {
             </article>
             <article className="bg-white-500 p-4 row-span-2 mr-230px-md sm-m-custom-5 mt-80px-md">
                 <div>
-                    <Chat />
+                    <Chat_Home />
                 </div>
             </article>
             <article className="bg-white-500 p-4 ml-230px-md sm-m-custom-5 mt-45px-md md:text-left text-center">
@@ -45,9 +45,9 @@ const Hero = () => {
                 </div>
             </article>
         </section>
-        <Projects />
+        {/* <Projects /> */}
     </>
   );
 }
 
-export default Hero;
+export default Home_Hero;

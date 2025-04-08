@@ -4,7 +4,7 @@ import projectsData from '../data/projectsData'; // Importa los datos
 
 const Projects = () => {
   return (
-    <section className="bg-projects-custom py-10 pb-bottom-50px shadow-inner-top">
+    <section id="projects_full" className="bg-projects-custom py-10 pb-bottom-50px shadow-inner-top">
       {/* Contenedor principal */}
       <article className="text-center pt-custom-90px pb-custom-30px ml-230px-md mr-230px-md ml-mr-30px">
         <div className="flex items-center justify-center ">

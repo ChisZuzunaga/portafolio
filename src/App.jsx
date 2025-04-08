@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
+import Home_Hero from './components/Home_Hero';
 import ProjectDetails from './components/ProjectDetails';
-import Portfolio from './components/Portfolio';
+import Portfolio_Hero from './components/Portfolio_Hero';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
@@ -18,17 +18,22 @@ function App() {
       <Nav onMenuToggle={setMenuOpen} />
       <div className={`${menuOpen ? 'mt-100px-md-custom' : 'mt-0px-md'} transition-all duration-300`}>
         <Routes>
-          {/* Define las rutas */}
-          <Route path="/" element={<Hero />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Home_Hero />
+                <About />
+                <Portfolio_Hero />
+                <Contact />
+              </>
+            }
+            />
           <Route path="/project/:id" element={<ProjectDetails />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }
-
 export default App
