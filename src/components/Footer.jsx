@@ -28,17 +28,17 @@ const Footer = () => {
       {/* Lista de enlaces a la derecha */}
       <ul className="flex hd-links text-lg font-light text-gray">
         <li>
-          <a href="/#about" className="hover:underline">
+          <a href="/About" className="hover:underline">
             About
           </a>
         </li>
         <li>
-          <a href="/#portfolio_hero" className="hover:underline pdlr-50px">
+          <a href="/Portfolio_hero" className="hover:underline pdlr-50px">
             Portfolio
           </a>
         </li>
         <li>
-          <a href="/#contact" className="hover:underline">
+          <a href="/Contact" className="hover:underline">
             Contact
           </a>
         </li>

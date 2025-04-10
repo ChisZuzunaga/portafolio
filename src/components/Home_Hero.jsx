@@ -6,7 +6,7 @@ const Home_Hero = () => {
   return (
     <>
         <section id="home_hero" className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 bg-hero pb-bottom-50px">
-            <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px">
+            <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px animate-fadeInLeft">
                 <header className="text-black text-3xl md:text-4xl font-regular">
                     <h1>
                         <span className="text-secondary-blue text-3xl md:text-4xl font-bold">Engineer</span> in Computer Science Front-End Specialist
@@ -16,12 +16,12 @@ const Home_Hero = () => {
                     Passionate about crafting seamless user experiences through modern web technologies. I specialize in building intuitive, responsive, and visually appealing interfaces.
                 </p>
             </article>
-            <article className="bg-white-500 p-4 row-span-2 mr-230px-md sm-m-custom-5 mt-80px-md">
+            <article className="bg-white-500 p-4 row-span-2 mr-230px-md sm-m-custom-5 mt-80px-md animate-fadeInRight">
                 <div>
                     <Chat_Home />
                 </div>
             </article>
-            <article className="bg-white-500 p-4 ml-230px-md sm-m-custom-5 mt-45px-md md:text-left text-center">
+            <article className="bg-white-500 p-4 ml-230px-md sm-m-custom-5 mt-45px-md md:text-left text-center animate-fadeInLeft">
                 <header className="text-black text-3xl md:text-4xl font-regular">
                     <h1>
                         <span className="text-secondary-blue text-3xl md:text-4xl font-bold">Specialities</span>
@@ -45,7 +45,7 @@ const Home_Hero = () => {
                 </div>
             </article>
         </section>
-        {/* <Projects /> */}
+        <Projects />
     </>
   );
 }

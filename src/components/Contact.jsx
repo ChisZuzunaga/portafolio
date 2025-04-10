@@ -1,5 +1,6 @@
 import React from 'react'
 import Chat_Contact from './Chats/Chat_Contact';
+import Input from './Input';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { 
     faGithub, 
@@ -35,7 +36,7 @@ const Contact = () => {
   return (
     <>
         <section id="contact" className="grid grid-cols-1 md:grid-cols-2 gap-2 bg-hero pb-bottom-50px">
-          <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px">
+          <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px animate-fadeInLeft">
               <header className="text-black text-3xl md:text-4xl font-regular">
                   <h1>
                       <span className="text-3xl md:text-6xl font-bold">Contact</span>
@@ -58,12 +59,13 @@ const Contact = () => {
                 ))} 
               </div>
           </article>
-          <article className="bg-white-500 p-4 row-span-2 mr-230px-md sm-m-custom-5 mt-80px-md">
+          <article className="bg-white-500 p-4 row-span-2 mr-230px-md sm-m-custom-5 mt-80px-md animate-fadeInRight">
               <div>
                   <Chat_Contact />
               </div>
           </article>
         </section>
+        <Input />
     </>
   )
 }

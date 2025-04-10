@@ -18,17 +18,10 @@ function App() {
       <Nav onMenuToggle={setMenuOpen} />
       <div className={`${menuOpen ? 'mt-100px-md-custom' : 'mt-0px-md'} transition-all duration-300`}>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Home_Hero />
-                <About />
-                <Portfolio_Hero />
-                <Contact />
-              </>
-            }
-            />
+          <Route path="/" element={<Home_Hero />} />
+          <Route path="/Portfolio_hero" element={<Portfolio_Hero />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
         </Routes>
       </div>

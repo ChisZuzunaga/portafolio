@@ -18,6 +18,46 @@ html {
   background-size: cover;
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.bg-project-one {
+  background-image: url('./assets/Background_project.svg');
+  background-size: cover;
+}
+
+.bg-project-two {
+  background-image: url('./assets/Background_project_two.svg');
+  background-size: cover;
+}
+
 :root {
   --primary_black: #151922;
   --background_black: #323441;
@@ -27,6 +67,10 @@ html {
 
 .pt-10px {
   padding-top: 10px;
+}
+
+.pt-20px {
+  padding-top: 20px;
 }
 .p-10px {
   padding: 10px;
@@ -64,8 +108,20 @@ html {
   color: var(--secondary_blue);
 }
 
+.pt-80px {
+  padding-top: 80px;
+}
+
 .text-gray {
   color: #757575;
+}
+
+h1 > .bar-custom {
+  width: 100%;
+}
+
+.w-custom {
+  width: 100% - calc(10px);
 }
 
 .ptb-custom-13px {
@@ -83,7 +139,7 @@ html {
 }
 
 .shadow-inner-top {
-  box-shadow: inset 0px -4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.25);
 }
 .pt-custom-90px {
   padding-top: 90px;
@@ -105,6 +161,14 @@ html {
 @media (min-width: 768px) {
   .txt-20-perc {
     width: 20%;
+  }
+
+  .pl-170px {
+    padding-left: 170px;
+  }
+  
+  .pr-170px {
+    padding-right: 170px;
   }
 
   .ml-230px-md {
@@ -143,6 +207,19 @@ html {
 @media (min-width: 0px) and (max-width: 767px) {
   .hd-links {
     display: none;
+  }
+
+  .pt-80px {
+    padding-top: 30px;
+  }
+
+  .pd-top-mobile-50px {
+    padding-top: 50px;
+  }
+
+  .plr-mobile-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .dp-links {
@@ -190,10 +267,11 @@ html {
     background-image: url('./assets/Background_mini_hero.svg');
     background-size: cover;
   }
+
 }
 
 .bg-projects-custom {
-  background-color: #FAFAFA;
+  background-color: #fbfbfb;
 }
 
 .bar-custom {
@@ -288,6 +366,11 @@ nav ul li a:hover{
   cursor: pointer;
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .ml-30px-tablet {
+    margin-left: 30px;
+  }
+}
 
 @media screen and (max-width: 991px){
   nav ul li a{
