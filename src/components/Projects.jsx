@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 import projectsData from '../data/projectsData'; // Importa los datos
 
 const Projects = () => {
+  const { i18n, t } = useTranslation(); // Hook para traducciones
+  const currentLang = i18n.language; // Obtén el idioma actual
+
   return (
     <section id="projects" className="bg-projects-custom py-10 pb-bottom-80px shadow-inner-top">
       {/* Contenedor principal */}
@@ -10,7 +14,7 @@ const Projects = () => {
         <div className="flex items-center justify-center ">
           <div className="bar-custom"></div>
           <h1 className="text-gray text-base font-light txt-20-perc">
-            MY LATEST PROJECTS
+            {t('projects_container.tittle')}
           </h1>
           <div className="bar-custom"></div>
         </div>
@@ -26,12 +30,12 @@ const Projects = () => {
               <Link to={`/project/${project.id}`}>
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={project.title[currentLang]}
                   className="w-full object-cover rounded-lg"
                 />
                 <div className="pt-10px">
-                  <h2 className="text-base font-normal">{project.title}</h2>
-                  <p className="text-sm font-light">{project.description}</p>
+                  <h2 className="text-base font-normal">{project.title[currentLang]}</h2>
+                  <p className="text-sm font-light">{project.description[currentLang]}</p>
                 </div>
               </Link>
             </div>

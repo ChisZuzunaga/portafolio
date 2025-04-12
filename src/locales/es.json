@@ -1,0 +1,50 @@
+{
+    "navbar": {
+      "about": "Acerca de",
+      "portfolio": "Portafolio",
+      "contact": "Contacto"
+    },
+    "chat_portfolio": {
+      "messages": [
+        { "id": 1, "text": "¿Puedes mostrarme tus proyectos? 😺", "side": "left" },
+        { "id": 2, "text": "Dame un momento 🐈", "side": "right" },
+        { "id": 3, "text": null, "side": "left", "gif": "cat_engineer" },
+        { "id": 4, "text": "?", "side": "right", "isReaction": true }
+      ]
+    },
+    "chat_home": {
+      "messages": [
+        { "id": 1, "text": "😺 Hola soy Ignacio", "side": "right" },
+        { "id": 2, "text": "Me gustan los Gatos 🐈", "side": "right" },
+        { "id": 3, "text": null, "side": "left", "gif": "cat_typing" },
+        { "id": 4, "text": "¿ Qué lenguajes utilizas ?", "side": "left" },
+        { "id": 5, "text": "Python, JavaScript, PHP. Y frameworks como React y Bootstrap.", "side": "right" }
+      ]
+    },
+    "home_hero": {
+      "engineer": "Ingeniero",
+      "title": "en Computación e Informática, Especialista en Front-End",
+      "desc": "Apasionado por crear experiencias de usuario fluidas a través de tecnologías web modernas. Me especializo en construir interfaces intuitivas, responsivas y visualmente atractivas.",
+      "specialities": "Especialidades",
+      "subtitle_uno": "Diseño UI/UX",
+      "desc_uno": "Diseño experiencias que se sienten naturales y sin esfuerzo. Desde wireframes hasta interfaces pulidas, mi enfoque siempre está en la usabilidad, la claridad y en crear interacciones significativas para los usuarios.",
+      "subtitle_dos": "Diseño Web",
+      "desc_dos": "Construyo sitios web que no solo son visualmente atractivos, sino también responsivos y optimizados para el rendimiento. Cada decisión de diseño se toma con un propósito, combinando estética con funcionalidad para ofrecer resultados impactantes."
+    },
+    "projects_container": {
+      "tittle": "MIS ÚLTIMOS PROYECTOS"
+    },
+    "portfolio": {
+      "tittle": "Portafolio.",
+      "subtitle": "Aquí hay algunos de mis últimos proyectos.",
+      "desc": "Cada proyecto es una oportunidad para aprender y crecer, y estoy emocionado de compartir mi viaje contigo. Desde aplicaciones web hasta diseños interactivos, cada uno refleja mi dedicación a la excelencia y mi pasión por la tecnología."
+    },
+    "contact": {
+      "tittle": "Contacto.",
+      "subtitle": "Ponte en contacto conmigo a través de las redes sociales o envíame un correo electrónico."
+    },
+    "project_info": {
+      "challenges": "Desafíos.",
+      "project": "El Proyecto."
+    }
+}

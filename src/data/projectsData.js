@@ -3,88 +3,219 @@ import p1_main from "../assets/Project_1_Main.svg";
 const projectsData = [
     {
       id: 1,
-      title: "Proyecto 1",
-      description: "Hecho con python y tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
-      date: "November 2024",
-      project: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      challenges: "askkdjaskldjasldjasldkj",
-      extrainfo_tittle: "Proyecto 1 extra",
-      extrainfo: "Proyecto 1 descripcion jasdjasdjsadj",
+      title: {
+        en: "Project 1",
+        es: "Proyecto 1",
+      },
+      description: {
+        en: "Made with Python and Tkinter. This project is an inventory system that allows managing products, suppliers, and sales.",
+        es: "Hecho con Python y Tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
+      },
+      date: {
+        en: "November 2024",
+        es: "Noviembre 2024",
+      },
+      project: {
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        es: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      },
+      challenges: {
+        en: "Some challenges faced during the project...",
+        es: "Algunos desafíos enfrentados durante el proyecto...",
+      },
+      extrainfo_tittle: {
+        en: "Extra Information",
+        es: "Información Extra",
+      },
+      extrainfo: {
+        en: "Additional details about the project...",
+        es: "Detalles adicionales sobre el proyecto...",
+      },
       image: p1_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
     },
+
     {
       id: 2,
-      title: "p2",
-      description: "Hecho con python y tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
-      date: "November 2024",
-      project: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      challenges: "",
-      extrainfo_tittle: "",
-      extrainfo: "",
-      image: "https://placehold.co/286x125", 
+      title: {
+        en: "Project 1",
+        es: "Proyecto 1",
+      },
+      description: {
+        en: "Made with Python and Tkinter. This project is an inventory system that allows managing products, suppliers, and sales.",
+        es: "Hecho con Python y Tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
+      },
+      date: {
+        en: "November 2024",
+        es: "Noviembre 2024",
+      },
+      project: {
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        es: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      },
+      challenges: {
+        en: "Some challenges faced during the project...",
+        es: "Algunos desafíos enfrentados durante el proyecto...",
+      },
+      extrainfo_tittle: {
+        en: "Extra Information",
+        es: "Información Extra",
+      },
+      extrainfo: {
+        en: "Additional details about the project...",
+        es: "Detalles adicionales sobre el proyecto...",
+      },
+      image: p1_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
-    },
+    },  
+
     {
       id: 3,
-      title: "p3",
-      description: "Hecho con python y tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
-      date: "November 2024",
-      project: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      challenges: "",
-      extrainfo_tittle: "",
-      extrainfo: "",
-      image: "https://placehold.co/286x125",
+      title: {
+        en: "Project 1",
+        es: "Proyecto 1",
+      },
+      description: {
+        en: "Made with Python and Tkinter. This project is an inventory system that allows managing products, suppliers, and sales.",
+        es: "Hecho con Python y Tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
+      },
+      date: {
+        en: "November 2024",
+        es: "Noviembre 2024",
+      },
+      project: {
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        es: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      },
+      challenges: {
+        en: "Some challenges faced during the project...",
+        es: "Algunos desafíos enfrentados durante el proyecto...",
+      },
+      extrainfo_tittle: {
+        en: "Extra Information",
+        es: "Información Extra",
+      },
+      extrainfo: {
+        en: "Additional details about the project...",
+        es: "Detalles adicionales sobre el proyecto...",
+      },
+      image: p1_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
-    },
+    },  
+    
     {
       id: 4,
-      title: "p4",
-      description: "Hecho con python y tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
-      date: "November 2024",
-      project: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      challenges: "",
-      extrainfo_tittle: "",
-      extrainfo: "",
-      image: "https://placehold.co/286x125",
+      title: {
+        en: "Project 1",
+        es: "Proyecto 1",
+      },
+      description: {
+        en: "Made with Python and Tkinter. This project is an inventory system that allows managing products, suppliers, and sales.",
+        es: "Hecho con Python y Tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
+      },
+      date: {
+        en: "November 2024",
+        es: "Noviembre 2024",
+      },
+      project: {
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        es: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      },
+      challenges: {
+        en: "Some challenges faced during the project...",
+        es: "Algunos desafíos enfrentados durante el proyecto...",
+      },
+      extrainfo_tittle: {
+        en: "Extra Information",
+        es: "Información Extra",
+      },
+      extrainfo: {
+        en: "Additional details about the project...",
+        es: "Detalles adicionales sobre el proyecto...",
+      },
+      image: p1_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
-    },
+    },  
+    
     {
       id: 5,
-      title: "p5",
-      description: "Hecho con python y tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
-      date: "November 2024",
-      project: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      challenges: "",
-      extrainfo_tittle: "",
-      extrainfo: "",
-      image: "https://placehold.co/286x125",
+      title: {
+        en: "Project 1",
+        es: "Proyecto 1",
+      },
+      description: {
+        en: "Made with Python and Tkinter. This project is an inventory system that allows managing products, suppliers, and sales.",
+        es: "Hecho con Python y Tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
+      },
+      date: {
+        en: "November 2024",
+        es: "Noviembre 2024",
+      },
+      project: {
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        es: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      },
+      challenges: {
+        en: "Some challenges faced during the project...",
+        es: "Algunos desafíos enfrentados durante el proyecto...",
+      },
+      extrainfo_tittle: {
+        en: "Extra Information",
+        es: "Información Extra",
+      },
+      extrainfo: {
+        en: "Additional details about the project...",
+        es: "Detalles adicionales sobre el proyecto...",
+      },
+      image: p1_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
     },
+
     {
       id: 6,
-      title: "p6",
-      description: "Hecho con python y tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
-      date: "November 2024",
-      project: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      challenges: "",
-      extrainfo_tittle: "",
-      extrainfo: "",
-      image: "https://placehold.co/286x125",
+      title: {
+        en: "Project 1",
+        es: "Proyecto 1",
+      },
+      description: {
+        en: "Made with Python and Tkinter. This project is an inventory system that allows managing products, suppliers, and sales.",
+        es: "Hecho con Python y Tkinter. Este proyecto es un sistema de inventario que permite gestionar productos, proveedores y ventas.",
+      },
+      date: {
+        en: "November 2024",
+        es: "Noviembre 2024",
+      },
+      project: {
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        es: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      },
+      challenges: {
+        en: "Some challenges faced during the project...",
+        es: "Algunos desafíos enfrentados durante el proyecto...",
+      },
+      extrainfo_tittle: {
+        en: "Extra Information",
+        es: "Información Extra",
+      },
+      extrainfo: {
+        en: "Additional details about the project...",
+        es: "Detalles adicionales sobre el proyecto...",
+      },
+      image: p1_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
     },
-  ];
+];
   
   export default projectsData;

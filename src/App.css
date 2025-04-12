@@ -366,6 +366,21 @@ nav ul li a:hover{
   cursor: pointer;
 }
 
+.language-dropdown select {
+  background-color: var(--primary_black);
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.language-dropdown select:hover {
+  background-color: var(--secondary_blue);
+  color: var(--white);
+}
+
 @media (min-width: 768px) and (max-width: 1200px){
   .ml-30px-tablet {
     margin-left: 30px;

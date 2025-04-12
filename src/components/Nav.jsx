@@ -1,10 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { 
-    faGithub, 
-    faInstagram, 
-    faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"; 
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"; 
+
 
 const socials = [
     { 
@@ -30,6 +28,9 @@ const Nav = ({ onMenuToggle }) => {
         onMenuToggle(newState); // <--- Notificar al padre
     };
 
+    const { i18n, t } = useTranslation(); // Hook para traducciones
+    const currentLang = i18n.language; // Obtén el idioma actual
+
     return ( 
         <nav id="nav" className={`navbar ${menuOpen ? "open" : ""}`}>
             <a href="/" className="logo">
@@ -45,13 +46,13 @@ const Nav = ({ onMenuToggle }) => {
             <div className={`nav-links ${menuOpen ? "visible" : ""}`} >
                 <ul>
                     <li>
-                        <a href="/About" className="text-base md:text-lg font-regular">About</a>
+                        <a href="/About" className="text-base md:text-lg font-regular">{t('navbar.about')}</a>
                     </li>
                     <li>
-                        <a href="/Portfolio_hero" className="text-base md:text-lg font-regular">Portfolio</a>
+                        <a href="/Portfolio_hero" className="text-base md:text-lg font-regular">{t('navbar.portfolio')}</a>
                     </li>
                     <li>
-                        <a href="/Contact" className="text-base md:text-lg font-regular">Contact</a>
+                        <a href="/Contact" className="text-base md:text-lg font-regular">{t('navbar.contact')}</a>
                     </li>
                 </ul>
                 <ul>
@@ -68,6 +69,13 @@ const Nav = ({ onMenuToggle }) => {
                         ))} 
                     </li>
                 </ul>
+                {/* Dropdown para cambiar idioma */}
+                <div className="language-dropdown">
+                    <select onChange={(e) => i18n.changeLanguage(e.target.value)} defaultValue={i18n.language}>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
             </div>
         </nav>
     );

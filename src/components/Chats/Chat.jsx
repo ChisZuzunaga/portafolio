@@ -1,18 +1,38 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const Chat = ({ initialMessages }) => {
   const [displayedMessages, setDisplayedMessages] = useState([]);
+  const [isChatComplete, setIsChatComplete] = useState(false); // Bandera para saber si el chat ha finalizado
+  const messageIndexRef = useRef(0); // Referencia para rastrear el índice del mensaje actual
 
   useEffect(() => {
-    // Mostrar mensajes uno por uno con retraso
-    const timeouts = initialMessages.map((message, index) => {
-      return setTimeout(() => {
-        setDisplayedMessages((prev) => [...prev, message]);
-      }, index * 1000); // 2 segundos entre mensajes
-    });
+    // Reiniciar el chat si cambian los mensajes iniciales
+    setDisplayedMessages([]);
+    setIsChatComplete(false);
+    messageIndexRef.current = 0;
 
-    return () => timeouts.forEach((timeout) => clearTimeout(timeout));
-  }, [initialMessages]); // Dependencia en initialMessages
+    // Mostrar mensajes uno por uno con retraso
+    const timeouts = [];
+    for (let i = 0; i < initialMessages.length; i++) {
+      const timeout = setTimeout(() => {
+        setDisplayedMessages((prev) => {
+          const newMessages = [...prev, initialMessages[i]];
+          // Si se han mostrado todos los mensajes, marcar el chat como completo
+          if (newMessages.length === initialMessages.length) {
+            setIsChatComplete(true);
+          }
+          return newMessages;
+        });
+        messageIndexRef.current = i + 1; // Actualizar el índice del mensaje actual
+      }, i * 1000); // 1 segundo entre mensajes
+      timeouts.push(timeout);
+    }
+
+    // Limpia los timeouts al desmontar el componente
+    return () => {
+      timeouts.forEach((timeout) => clearTimeout(timeout));
+    };
+  }, [initialMessages]); // Escuchar cambios en initialMessages
 
   return (
     <div className="flex-1 overflow-y-auto-hidden p-4 space-y-2">

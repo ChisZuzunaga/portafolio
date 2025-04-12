@@ -1,7 +1,11 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 import { FaChevronUp } from 'react-icons/fa'; // Importa el ícono de la flecha
 
 const Footer = () => {
+  const { i18n, t } = useTranslation(); // Hook para traducciones
+  const currentLang = i18n.language; // Obtén el idioma actual
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -29,17 +33,17 @@ const Footer = () => {
       <ul className="flex hd-links text-lg font-light text-gray">
         <li>
           <a href="/About" className="hover:underline">
-            About
+            {t('navbar.about')}
           </a>
         </li>
         <li>
           <a href="/Portfolio_hero" className="hover:underline pdlr-50px">
-            Portfolio
+            {t('navbar.portfolio')}
           </a>
         </li>
         <li>
           <a href="/Contact" className="hover:underline">
-            Contact
+            {t('navbar.contact')}
           </a>
         </li>
       </ul>

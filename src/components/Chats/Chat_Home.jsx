@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Chat from './Chat';
+import { useTranslation } from 'react-i18next';
 import cat_typing from '../../assets/cat_typing.gif';
 
-const Chat_Portfolio = () => {
-  const initialMessages = [
-    { id: 1, text: "😺 Hi there I'm Ignacio", side: "right" },
-    { id: 2, text: "I like cats 🐈", side: "right" },
-    { id: 3, text: null, side: "left", gif: cat_typing },
-    { id: 4, text: "What language u use?", side: "left" },
-    { id: 5, text: "Python, JavaScript, PHP. And frameworks like React and Bootstrap.", side: "right" }
-  ];
+const Chat_Home = () => {
+  const { i18n, t } = useTranslation(); // Hook para traducciones
+  const [initialMessages, setInitialMessages] = useState([]); // Define el estado para los mensajes
+
+  // Cargar mensajes desde i18n y actualizarlos cuando cambie el idioma
+  useEffect(() => {
+    const messages = t('chat_home.messages', { returnObjects: true }).map((message) => {
+      // Reemplazar el GIF con la imagen importada si es necesario
+      if (message.gif === 'cat_typing') {
+        return { ...message, gif: cat_typing };
+      }
+      return message;
+    });
+    setInitialMessages(messages); // Actualiza el estado con los mensajes
+  }, [t, i18n.language]); // Escuchar cambios en el idioma
 
   return <Chat initialMessages={initialMessages} />;
 };
 
-export default Chat_Portfolio;
+export default Chat_Home;

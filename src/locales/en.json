@@ -1,0 +1,50 @@
+{
+    "navbar": {
+      "about": "About",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "chat_portfolio": {
+      "messages": [
+        { "id": 1, "text": "Can u show me ur projects 😺", "side": "left" },
+        { "id": 2, "text": "Give me a momment 🐈", "side": "right" },
+        { "id": 3, "text": null, "side": "left", "gif": "cat_engineer" },
+        { "id": 4, "text": "?", "side": "right", "isReaction": true }
+      ]
+    },
+    "chat_home": {
+      "messages": [
+        { "id": 1, "text": "😺 Hi there I'm Ignacio", "side": "right" },
+        { "id": 2, "text": "I like cats 🐈", "side": "right" },
+        { "id": 3, "text": null, "side": "left", "gif": "cat_typing" },
+        { "id": 4, "text": "What language u use?", "side": "left" },
+        { "id": 5, "text": "Python, JavaScript, PHP. And frameworks like React and Bootstrap.", "side": "right" }
+      ]
+    },
+    "home_hero": {
+      "engineer": "Engineer",
+      "title": "in Computer Science Front-End Specialist",
+      "desc": "Passionate about crafting seamless user experiences through modern web technologies. I specialize in building intuitive, responsive, and visually appealing interfaces.",
+      "specialities": "Specialities",
+      "subtitle_uno": "UI/UX Design",
+      "desc_uno": "I design experiences that feel natural and effortless. From wireframes to polished interfaces, my focus is always on usability, clarity, and creating meaningful interactions for users.",
+      "subtitle_dos": "Web Design",
+      "desc_dos": "I build websites that are not only visually appealing but also responsive and performance-driven. Every design choice is made with purpose, blending aesthetics with functionality to deliver impactful results."
+    },
+    "projects_container": {
+      "tittle": "MY LATEST PROJECTS"
+    },
+    "portfolio": {
+      "tittle": "Portfolio.",
+      "subtitle": "Check out some of my latest projects.",
+      "desc": "Each project is an opportunity to learn and grow, and I'm excited to share my journey with you. From web applications to interactive designs, each one reflects my dedication to excellence and my passion for technology."
+    },
+    "contact": {
+      "tittle": "Contact",
+      "subtitle": "Get in touch with me via social media or send me an email."
+    },
+    "project_info": {
+      "challenges": "Challenges.",
+      "project": "The Project."
+    }
+}

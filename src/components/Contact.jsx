@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Chat_Contact from './Chats/Chat_Contact';
 import Input from './Input';
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { 
     faGithub, 
@@ -33,17 +34,19 @@ const socials = [
 ]; 
 
 const Contact = () => {
+  const { t } = useTranslation(); // Hook para traducciones
+
   return (
     <>
         <section id="contact" className="grid grid-cols-1 md:grid-cols-2 gap-2 bg-hero pb-bottom-50px">
           <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px animate-fadeInLeft">
               <header className="text-black text-3xl md:text-4xl font-regular">
                   <h1>
-                      <span className="text-3xl md:text-6xl font-bold">Contact</span>
+                      <span className="text-3xl md:text-6xl font-bold">{t('contact.tittle')}</span>
                   </h1>
               </header>
               <h2>
-                <span className='text-xl md:text-4xl font-light'>Get in touch with me via social media or send me an email.</span>
+                <span className='text-xl md:text-4xl font-light'>{t('contact.subtitle')}</span>
               </h2>
               <div className='grid grid-cols-2 grid-rows-2 gap-2 pt-10px'>
                 {socials.map(({ icon, url, text }) => ( 
@@ -54,7 +57,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className='font-light text-xl justify-center align-items-center'
                   > 
-                      <FontAwesomeIcon icon={icon} size="2x" key={url} className="socials-logos" /> {text}
+                      <FontAwesomeIcon icon={icon} size="2x" className="socials-logos" /> {text}
                   </a> 
                 ))} 
               </div>
@@ -67,7 +70,7 @@ const Contact = () => {
         </section>
         <Input />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
