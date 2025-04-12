@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import projectsData from '../data/projectsData'; // Importa los datos
 import { useTranslation } from "react-i18next";
@@ -6,7 +6,10 @@ import { useTranslation } from "react-i18next";
 const Projects = () => {
   const { i18n, t } = useTranslation(); // Hook para traducciones
   const currentLang = i18n.language; // Obtén el idioma actual
-  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplaza la página al inicio al cargar el componente
+  }, []);
+
   return (
     <section id="projects_full" className="bg-projects-custom py-10 pb-bottom-50px shadow-inner-top">
       {/* Contenedor principal */}

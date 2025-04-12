@@ -10,6 +10,7 @@ import Portfolio_Hero from './components/Portfolio_Hero';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
         {/* Navbar siempre visible */}
         <Nav onMenuToggle={setMenuOpen} />
         <div className={`${menuOpen ? 'mt-100px-md-custom' : 'mt-0px-md'} transition-all duration-300`}>
+        <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home_Hero />} />
             <Route path="/Portfolio_hero" element={<Portfolio_Hero />} />
