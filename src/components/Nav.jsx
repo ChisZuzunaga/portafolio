@@ -46,7 +46,7 @@ const Nav = ({ onMenuToggle }) => {
             <div className={`nav-links ${menuOpen ? "visible" : ""}`} >
                 <ul>
                     <li>
-                        <a href="/About" className="text-base md:text-lg font-regular">{t('navbar.about')}</a>
+                        <a href="/" className="text-base md:text-lg font-regular">{t('navbar.about')}</a>
                     </li>
                     <li>
                         <a href="/Portfolio_hero" className="text-base md:text-lg font-regular">{t('navbar.portfolio')}</a>

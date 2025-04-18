@@ -34,7 +34,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title[currentLang]}
-                  className="w-full object-cover rounded-lg"
+                  className="w-full object-cover rounded-md"
                 />
                 <div className="pt-10px">
                   <h2 className="text-base font-normal">{project.title[currentLang]}</h2>

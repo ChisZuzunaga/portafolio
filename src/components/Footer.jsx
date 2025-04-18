@@ -32,7 +32,7 @@ const Footer = () => {
       {/* Lista de enlaces a la derecha */}
       <ul className="flex hd-links text-lg font-light text-gray">
         <li>
-          <a href="/About" className="hover:underline">
+          <a href="/" className="hover:underline">
             {t('navbar.about')}
           </a>
         </li>

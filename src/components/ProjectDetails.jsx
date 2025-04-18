@@ -62,7 +62,7 @@ const ProjectDetails = () => {
             </h1>
           </article>
           <article className='mr-230px-md ml-230px-md '>
-            <img src={project.image1} className='w-full pr-170px pl-170px'/>
+            <img src={project.image2} className='w-full pr-170px pl-170px'/>
           </article>
         </section>
 
@@ -74,7 +74,7 @@ const ProjectDetails = () => {
             </h1>
           </article>
           <article className='mr-230px-md ml-230px-md '>
-            <img src={project.image1} className='w-full pr-170px pl-170px'/>
+            <img src={project.image3} className='w-full pr-170px pl-170px'/>
           </article>
         </section>
         <Projects />

@@ -26,7 +26,6 @@ function App() {
             <Route path="/" element={<Home_Hero />} />
             <Route path="/Portfolio_hero" element={<Portfolio_Hero />} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="/About" element={<About />} />
             <Route path="/project/:id" element={<ProjectDetails />} />
           </Routes>
         </div>

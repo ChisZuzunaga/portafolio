@@ -1,4 +1,23 @@
-import p1_main from "../assets/Project_1_Main.svg";
+import p1_main from "../assets/inventario_thumbnail.svg";
+import inventario_1 from "../assets/inventario_1.svg";
+import inventario_2 from "../assets/inventario_2.svg";
+import inventario_3 from "../assets/inventario_3.svg";
+
+import p2_main from "../assets/canchas_thumbnail.svg";
+import canchas_1 from "../assets/canchas_1.png";
+import canchas_2 from "../assets/canchas_2.svg";
+import canchas_3 from "../assets/canchas_3.png";
+
+import p3_main from "../assets/lenguaje_thumbnail.svg";
+import lengua_1 from "../assets/lengua_1.png";
+import lengua_2 from "../assets/lengua_2.svg";
+import lengua_3 from "../assets/lengua_3.png";
+
+import p4_main from "../assets/maximar_thumbnail.svg";
+
+import p5_main from "../assets/galeria_thumbnail.svg";
+
+import p6_main from "../assets/robot_thumbnail.svg";
 
 const projectsData = [
     {
@@ -32,9 +51,9 @@ const projectsData = [
         es: "El sistema puede generar informes en PDF para analizar datos de ventas, incluyendo los productos más vendidos y los clientes o proveedores más frecuentes.",
       },
       image: p1_main,
-      image1: "https://placehold.co/980x1110",
-      image2: "https://placehold.co/980x430",
-      image3: "https://placehold.co/980x450",
+      image1: inventario_1,
+      image2: inventario_2,
+      image3: inventario_3,
     },
 
     {
@@ -67,10 +86,10 @@ const projectsData = [
         en: "Includes a user and admin mode. Admins can manage bookings, view statistics, and analyze frequent users and peak booking times.",
         es: "Incluye modo usuario y administrador. Los administradores pueden gestionar reservas, ver estadísticas y analizar usuarios frecuentes y horarios con más demanda.",
       },
-      image: p1_main,
-      image1: "https://placehold.co/980x1110",
-      image2: "https://placehold.co/980x430",
-      image3: "https://placehold.co/980x450",
+      image: p2_main,
+      image1: canchas_1,
+      image2: canchas_2,
+      image3: canchas_3,
     },  
 
     {
@@ -92,21 +111,21 @@ const projectsData = [
         es: "Desarrollado en colaboración con un stakeholder y miembros de la comunidad sorda, el sistema usa redes neuronales convolucionales con LSTM para interpretar signos en contexto.",
       },
       challenges: {
-        en: "Hardware limitations hindered model training. Each letter required around 600 images, taking up nearly 1GB of space.",
-        es: "Las limitaciones del hardware dificultaron el entrenamiento del modelo. Cada letra requería unas 600 imágenes, ocupando cerca de 1GB de espacio.",
+        en: "Hardware limitations hindered model training. Each letter required around 1.200 images, taking up nearly 0.5GB of space.",
+        es: "Las limitaciones del hardware dificultaron el entrenamiento del modelo. Cada letra requería unas 1.200 imágenes, ocupando cerca de 0.5GB de espacio.",
       },
       extrainfo_tittle: {
-        en: "Extra Information",
-        es: "Información Extra",
+        en: "Aditionals Difficulties",
+        es: "Dificultades adicionales",
       },
       extrainfo: {
-        en: "The project emphasized inclusion and community validation with interpreters and Deaf participants throughout development.",
-        es: "El proyecto destacó la inclusión y validación comunitaria con intérpretes y participantes sordos durante el desarrollo.",
+        en: "Despite having a large amount of training data, the desired accuracy was not always achieved. The project emphasized community inclusion and validation with interpreters and Deaf participants throughout development.",
+        es: "A pesar de tener una gran cantidad de datos para el entrenamiento, no siempre se lograba la precisión deseada. El proyecto enfatizó la inclusión y validación comunitaria con intérpretes y participantes sordos durante todo el desarrollo.",
       },
-      image: p1_main,
-      image1: "https://placehold.co/980x1110",
-      image2: "https://placehold.co/980x430",
-      image3: "https://placehold.co/980x450",
+      image: p3_main,
+      image1: lengua_1,
+      image2: lengua_2,
+      image3: lengua_3,
     },  
     
     {
@@ -139,7 +158,7 @@ const projectsData = [
         en: "The website is fully responsive and adapts well to both mobile and desktop devices. As a promotional page, it highlights the products offered by 'Maximar'.",
         es: "El sitio web es completamente responsivo y se adapta correctamente tanto a dispositivos móviles como de escritorio. Al ser una página publicitaria, se exhiben los productos que ofrece 'Maximar'."
       },
-      image: p1_main,
+      image: p4_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
@@ -175,7 +194,7 @@ const projectsData = [
         en: "All the images used in this project were selected from my personal Pinterest collection.",
         es: "Todas las imágenes utilizadas en este proyecto fueron seleccionadas de mi colección personal en Pinterest."
       },
-      image: p1_main,
+      image: p5_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
@@ -211,7 +230,7 @@ const projectsData = [
         en: "Despite the technical limitations, working with Arduino, sensors, motors, and servos was a rewarding experience. This was my first hands-on project with embedded systems.",
         es: "A pesar de las limitaciones técnicas, trabajar con Arduino, sensores, motores y servos fue una experiencia muy gratificante. Este fue mi primer proyecto práctico con sistemas embebidos.",
       },
-      image: p1_main,
+      image: p6_main,
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
