@@ -2,6 +2,7 @@ import React from 'react';
 import Chat_Home from './Chats/Chat_Home';
 import { useTranslation } from 'react-i18next';
 import Projects from './Projects';
+import SkillsSection from "./SkillsSection";
 
 const Home_Hero = () => {
     const { i18n, t } = useTranslation(); // Hook para traducciones
@@ -49,6 +50,7 @@ const Home_Hero = () => {
                     </div>
                 </article>
             </section>
+            <SkillsSection id="perfil" />
             <Projects />
         </>
     );

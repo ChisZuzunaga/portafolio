@@ -124,6 +124,11 @@ h1 > .bar-custom {
   width: 100% - calc(10px);
 }
 
+.ptb-80px-md {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .ptb-custom-13px {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -260,7 +265,7 @@ h1 > .bar-custom {
   }
 
   .mt-100px-md-custom {
-    margin-top: 150px;
+    margin-top: 180px;
   }
 
   .bg-hero {
@@ -274,6 +279,20 @@ h1 > .bar-custom {
   background-color: #fbfbfb;
 }
 
+.bg-projects-custom-nav {
+  background-color: #343A48;
+  border-radius: 5px;
+}
+
+.bg-projects-custom-nav:hover {
+  background-color: #596071;
+  border-radius: 5px;
+}
+
+.hoover-clicker:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
 .bar-custom {
   background-color: #DDDDDD;
   width: 40%;
@@ -327,6 +346,13 @@ nav ul li a:hover{
   color: var(--white);
 }
 
+.p3px {
+  padding: 3px;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
 .navbar {
   padding: 25px 5%;
   display: flex;
@@ -365,20 +391,61 @@ nav ul li a:hover{
   display: none;
   cursor: pointer;
 }
-
-.language-dropdown select {
-  background-color: var(--primary_black);
+/* Estilo para el botón principal del dropdown */
+.language-dropdown button {
+  background-color: #343A48;
   color: var(--white);
-  border: 1px solid var(--white);
+  border: 1px solid #343A48;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.language-dropdown select:hover {
+/* Hover solo para el botón principal */
+.language-dropdown button:hover {
+  background-color: #49505e;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+/* Estilo para las opciones del dropdown */
+.language-dropdown .dropdown-options {
+  background-color: var(--white);
+  color: var(--primary_black);
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 10px;
+}
+.pd5-p {
+  padding: 5px 5px 5px 10px;
+}
+.language-dropdown .dropdown-options div {
+  transition: background-color 0.2s ease;
+}
+.language-dropdown .dropdown-options div:hover {
+  background-color: #f0f0f0; /* Fondo gris claro al pasar el cursor */
+  border-radius: 5px;
+}
+.language-dropdown .dropdown-options div.bg-gray-200 {
+  background-color: #e0e0e0; /* Fondo gris para el idioma actual */
+  color: #a0a0a0; /* Texto gris para el idioma actual */
+  cursor: default; /* Cursor deshabilitado */
+  border-radius: 5px;
+}
+/* Hover solo para las opciones del dropdown */
+.language-dropdown .dropdown-options div:hover {
   background-color: var(--secondary_blue);
   color: var(--white);
+  cursor: pointer;
+}
+
+.p5px {
+  padding: 5px 15px 5px 10px;
+}
+.border-nav-language {
+  border: 1px solid #343A48;
 }
 
 @media (min-width: 768px) and (max-width: 1200px){

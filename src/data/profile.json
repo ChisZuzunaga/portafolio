@@ -1,0 +1,73 @@
+{
+  "nombre": "Ignacio Guerra Torres",
+  "contacto": {
+    "ubicacion": "Santiago, Chile",
+    "email": "",
+    "telefono": "",
+    "linkedin": "https://www.linkedin.com/in/ignacio-guerra-torres-409a22337/",
+    "github": "",
+    "cvUrl": "/cv.pdf"
+  },
+
+  "resumen_es": "Desarrollador con foco en interfaces y experiencia de usuario (UX/UI). Trabajo con React y ecosistema web moderno, creando productos accesibles, rápidos y escalables.",
+  "resumen_en": "Developer focused on interfaces and user experience (UX/UI). I work with React and the modern web ecosystem to build accessible, fast, and scalable products.",
+
+  "habilidadesBlandas_es": [
+    "Comunicación efectiva",
+    "Trabajo en equipo",
+    "Gestión del tiempo",
+    "Adaptabilidad",
+    "Pensamiento crítico",
+    "Orientación a la experiencia de usuario (UX/UI)"
+  ],
+  "habilidadesBlandas_en": [
+    "Effective communication",
+    "Teamwork",
+    "Time management",
+    "Adaptability",
+    "Critical thinking",
+    "User experience orientation (UX/UI)"
+  ],
+
+  "tecnologias": [
+    { "id": "react", "nombre": "React", "slug": "react" },
+    { "id": "javascript", "nombre": "JavaScript", "slug": "javascript" },
+    { "id": "python", "nombre": "Python", "slug": "python" },
+    { "id": "html5", "nombre": "HTML5", "slug": "html5" },
+    { "id": "css3", "nombre": "CSS3", "slug": "css3" },
+    { "id": "neo4j", "nombre": "Neo4j", "slug": "neo4j" },
+    { "id": "php", "nombre": "PHP", "slug": "php" },
+    { "id": "kotlin", "nombre": "Kotlin", "slug": "kotlin" },
+    { "id": "git", "nombre": "Git", "slug": "git" }
+  ],
+
+  "herramientas": [
+    { "id": "figma", "nombre": "Figma", "slug": "figma" },
+    { "id": "photoshop", "nombre": "Adobe Photoshop", "slug": "adobephotoshop" },
+    { "id": "uxui", "nombre": "UX/UI", "slug": null, "custom": "uxui" }
+  ],
+
+  "habilidadesTecnicas": [
+    { "nombre": "React", "nivel": 85 },
+    { "nombre": "JavaScript", "nivel": 85 },
+    { "nombre": "HTML5", "nivel": 90 },
+    { "nombre": "CSS3", "nivel": 85 },
+    { "nombre": "Python", "nivel": 70 },
+    { "nombre": "Neo4j", "nivel": 60 },
+    { "nombre": "PHP", "nivel": 65 },
+    { "nombre": "Kotlin", "nivel": 55 },
+    { "nombre": "Git", "nivel": 80 }
+  ],
+
+  "certificaciones": [
+    { "titulo": "", "entidad": "", "fecha": "", "enlace": "" }
+  ],
+
+  "estudios": [
+    { "institucion": "", "programa": "", "periodo": "", "descripcion": "" }
+  ],
+
+  "experiencia": [
+    { "cargo": "", "empresa": "", "periodo": "", "lugar": "", "logros": ["", ""], "tech": ["React", "JS"] }
+  ]
+}
