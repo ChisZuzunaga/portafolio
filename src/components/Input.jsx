@@ -7,13 +7,13 @@ const Input = () => {
   return (
     <section className='bg-projects-custom ptb-80px-md'>
       <article className='ml-230px-md mr-230px-md ml-mr-30px'>
-        <h1 className='text-4xl font-light mb-6'>{t('contact_input.send')}</h1>
+        <h1 className='type-title type-light mb-6'>{t('contact_input.send')}</h1>
         <form className='grid grid-cols-1 gap-4'>
           {/* Name and Email Inputs */}
           <div className='grid lg:grid-cols-2 gap-4'>
             {/* Name Input */}
             <div>
-              <label htmlFor='name' className='block text-lg font-light mb-2'>{t('contact_input.name')}</label>
+              <label htmlFor='name' className='block type-body-large type-light mb-2'>{t('contact_input.name')}</label>
               <input
                 type='text'
                 id='name'
@@ -25,7 +25,7 @@ const Input = () => {
 
             {/* Email Input */}
             <div>
-              <label htmlFor='email' className='block text-lg font-light mb-2'>{t('contact_input.email')}</label>
+              <label htmlFor='email' className='block type-body-large type-light mb-2'>{t('contact_input.email')}</label>
               <input
                 type='email'
                 id='email'
@@ -38,7 +38,7 @@ const Input = () => {
 
           {/* Message Input */}
           <div>
-            <label htmlFor='message' className='block text-lg font-light mb-2'>{t('contact_input.message')}</label>
+            <label htmlFor='message' className='block type-body-large type-light mb-2'>{t('contact_input.message')}</label>
             <textarea
               id='message'
               name='message'
@@ -52,7 +52,7 @@ const Input = () => {
           <div>
             <button
               type='submit'
-              className='bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300'
+              className='type-body type-semibold bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300'
             >
               {t('contact_input.submit')}
             </button>

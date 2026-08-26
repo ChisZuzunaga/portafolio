@@ -3,8 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FaChevronUp } from 'react-icons/fa'; // Importa el ícono de la flecha
 
 const Footer = () => {
-  const { i18n, t } = useTranslation(); // Hook para traducciones
-  const currentLang = i18n.language; // Obtén el idioma actual
+  const { t } = useTranslation();
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -17,7 +16,7 @@ const Footer = () => {
   return (
     <footer id="footer" className="p-footer text-black bg-footer flex items-center justify-between relative dp-links custom-footer">
       {/* Nombre a la izquierda */}
-      <div className="text-lg font-light text-gray">
+      <div className="type-body-large type-light color-muted">
         &copy; Ignacio Guerra.
       </div>
 
@@ -25,12 +24,12 @@ const Footer = () => {
       <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full flex items-center justify-center bg-footer cursor-pointer custom-medium-circle"
       onClick={scrollToTop}>
         <a>
-          <FaChevronUp className="text-gray text-3xl" />
+          <FaChevronUp className="color-muted type-title" />
         </a>
       </div>
 
       {/* Lista de enlaces a la derecha */}
-      <ul className="flex hd-links text-lg font-light text-gray">
+      <ul className="flex hd-links type-body-large type-light color-muted">
         <li>
           <a href="/" className="hover:underline">
             {t('navbar.about')}

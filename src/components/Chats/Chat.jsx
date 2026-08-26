@@ -2,13 +2,11 @@ import { useEffect, useState, useRef } from 'react';
 
 const Chat = ({ initialMessages }) => {
   const [displayedMessages, setDisplayedMessages] = useState([]);
-  const [isChatComplete, setIsChatComplete] = useState(false); // Bandera para saber si el chat ha finalizado
   const messageIndexRef = useRef(0); // Referencia para rastrear el índice del mensaje actual
 
   useEffect(() => {
     // Reiniciar el chat si cambian los mensajes iniciales
     setDisplayedMessages([]);
-    setIsChatComplete(false);
     messageIndexRef.current = 0;
 
     // Mostrar mensajes uno por uno con retraso
@@ -17,10 +15,6 @@ const Chat = ({ initialMessages }) => {
       const timeout = setTimeout(() => {
         setDisplayedMessages((prev) => {
           const newMessages = [...prev, initialMessages[i]];
-          // Si se han mostrado todos los mensajes, marcar el chat como completo
-          if (newMessages.length === initialMessages.length) {
-            setIsChatComplete(true);
-          }
           return newMessages;
         });
         messageIndexRef.current = i + 1; // Actualizar el índice del mensaje actual
@@ -51,9 +45,9 @@ const Chat = ({ initialMessages }) => {
               {/* Mensaje de texto normal */}
               {message.text && (
                 <div
-                  className={`max-w-xs md:max-w-md plr-custom-12px mb-custom-15px ptb-custom-13px text-lg rounded-2xl mb-2 animate-fadeIn md:text-xl ${
+                  className={`max-w-xs md:max-w-md plr-custom-12px mb-custom-15px ptb-custom-13px type-body-large rounded-2xl mb-2 animate-fadeIn ${
                     message.side === 'left'
-                      ? 'bg-[#E9E9EB] rounded-bl-none chat-bubble-left md-l-20px'
+                      ? 'bg-chat-gray rounded-bl-none chat-bubble-left md-l-20px'
                       : 'bg-blue-500 text-white rounded-br-none chat-bubble-right md-r-20px'
                   }`}
                 >

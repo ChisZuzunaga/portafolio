@@ -2,7 +2,8 @@
     "navbar": {
       "about": "Acerca de",
       "portfolio": "Portafolio",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "language": "Seleccionar idioma"
     },
     "chat_portfolio": {
       "messages": [
@@ -53,5 +54,139 @@
       "email": "Correo Electrónico",
       "message": "Mensaje",
       "submit": "Enviar"
+    },
+    "resume": {
+      "eyebrow": "CURRÍCULUM VITAE",
+      "title": "Experiencia, formación y habilidades",
+      "subtitle": "Una síntesis de mi trayectoria profesional, proyectos y herramientas técnicas.",
+      "profileLabel": "Perfil profesional",
+      "role": "Ingeniero Civil en Computación e Informática",
+      "download": "Descargar CV en PDF",
+      "location": "La Serena, Coquimbo, Chile",
+      "contact": {
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "location": "Ubicación",
+        "viewProfile": "Ver perfil"
+      },
+      "experience": {
+        "title": "Experiencia",
+        "items": [
+          {
+            "title": "Desarrollador de Aplicaciones Móviles",
+            "organization": "UBICATE - Aplicación móvil de transporte público",
+            "period": "Oct. 2025 - Jun. 2026",
+            "details": [
+              "Desarrollé una aplicación para pasajeros y conductores con navegación diferenciada según el rol del usuario.",
+              "Implementé geolocalización, mapas interactivos, recorridos, paraderos, permisos del dispositivo y códigos QR con React Native, Expo, TypeScript, Supabase y React Native Maps."
+            ]
+          },
+          {
+            "title": "Práctica Profesional",
+            "organization": "Comercializadora Mary Bel Gonzalez Marambio",
+            "period": "Ene. 2025 - Feb. 2025",
+            "location": "Tongoy, Coquimbo",
+            "details": [
+              "Desarrollé un sitio web responsivo para promocionar productos marítimos, con navegación intuitiva y formulario de contacto integrado con Google Forms.",
+              "Implementé un sistema de inventario con Python, Tkinter y SQLite para gestionar productos y transacciones, generar reportes y automatizar copias de seguridad."
+            ]
+          },
+          {
+            "title": "Diseñador de Interfaces y Material Gráfico",
+            "organization": "Talento Verde",
+            "period": "May. 2024 - Dic. 2024",
+            "location": "La Serena, Coquimbo",
+            "details": [
+              "Diseñé mockups, prototipos interactivos y pantallas de alta fidelidad según necesidades de usuarios y requerimientos del proyecto.",
+              "Creé material gráfico promocional para comunicar la misión y propuesta de valor del proyecto."
+            ]
+          },
+          {
+            "title": "Práctica Operacional",
+            "organization": "KYF",
+            "period": "Ene. 2024 - Mar. 2024",
+            "location": "La Serena, Coquimbo",
+            "details": [
+              "Elaboré manuales de uso para aplicaciones de monitoreo de guardias, estructurando procedimientos claros para usuarios."
+            ]
+          },
+          {
+            "title": "Práctica Técnica",
+            "organization": "Ilustre Municipalidad de Taltal",
+            "period": "Ene. 2020 - Mar. 2020",
+            "location": "Taltal, Antofagasta",
+            "details": [
+              "Apoyé la administración, clasificación y organización de documentación municipal."
+            ]
+          }
+        ]
+      },
+      "education": {
+        "title": "Educación",
+        "degree": "Ingeniero Civil en Computación e Informática",
+        "institution": "Universidad Central de Chile",
+        "period": "Mar. 2021 - Ago. 2026",
+        "location": "La Serena, Coquimbo"
+      },
+      "certifications": {
+        "title": "Certificaciones y actividades",
+        "items": [
+          { "title": "Meta Front-End Developer", "organization": "Meta", "date": "Mar. 2025" },
+          { "title": "Hackathon 2024", "organization": "Investigador y Analista de Datos", "date": "Nov. 2024" },
+          { "title": "Hackathon 2023", "organization": "Diseñador Web", "date": "Nov. 2023" }
+        ]
+      },
+      "projects": {
+        "title": "Proyectos destacados",
+        "items": [
+          {
+            "title": "TEADORO",
+            "period": "Proyecto de título - 2026",
+            "stack": "ESP32-S3, FastAPI, WebSocket y aplicación móvil",
+            "details": [
+              "Desarrollé una herramienta tecnológica interactiva para apoyar la práctica de habilidades comunicativas en niños con Trastorno del Espectro Autista dentro del hogar y bajo supervisión adulta.",
+              "Participé en el levantamiento de requerimientos, diseño de arquitectura, integración de hardware y software y pruebas técnicas. El prototipo alcanzó 98,33 % de éxito operacional y 2,52 segundos de respuesta promedio."
+            ]
+          },
+          {
+            "title": "Formación Guiada y Consciente en Inteligencia Artificial",
+            "period": "Ago. 2025 - Dic. 2025",
+            "stack": "Proyecto universitario interdisciplinario",
+            "details": [
+              "Capacité y acompañé a estudiantes de tercer año de Kinesiología en el uso crítico, guiado y responsable de herramientas de IA.",
+              "Colaboré en un estudio cuantitativo cuasi-experimental con cuatro niveles de orientación, utilizando encuestas y rúbricas."
+            ]
+          },
+          {
+            "title": "Sistema de Reservas de Canchas de Pádel",
+            "period": "Proyecto académico",
+            "stack": "Desarrollo web y Kanban",
+            "details": [
+              "Participé en el desarrollo de un sistema con selección de horarios, registro de usuarios y confirmación de reservas, integrado en tres asignaturas del octavo semestre."
+            ]
+          },
+          {
+            "title": "Reconocimiento de Lenguaje de Señas",
+            "period": "Proyecto académico",
+            "stack": "Redes neuronales CNN y LSTM",
+            "details": [
+              "Implementé un prototipo para reconocimiento de lenguaje de señas como proyecto final de la asignatura Inteligencia Artificial."
+            ]
+          }
+        ]
+      },
+      "skills": {
+        "title": "Habilidades técnicas",
+        "groups": {
+          "languages": "Lenguajes",
+          "development": "Desarrollo móvil, web e integración",
+          "dataHardware": "Bases de datos, hardware y herramientas",
+          "design": "Diseño y metodologías"
+        },
+        "items": {
+          "mockups": "Mockups",
+          "prototyping": "Prototipado de alta fidelidad"
+        }
+      }
     }
 }

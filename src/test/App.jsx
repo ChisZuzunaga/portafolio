@@ -11,7 +11,7 @@ import About from './components/About';
 import SpecialPage from './components/SpecialPage'; // Página sin Nav ni Footer
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen] = useState(false);
 
   return (
     <Router>

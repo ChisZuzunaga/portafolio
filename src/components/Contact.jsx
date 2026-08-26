@@ -40,13 +40,13 @@ const Contact = () => {
     <>
         <section id="contact" className="grid grid-cols-1 md:grid-cols-2 gap-2 bg-hero pb-bottom-50px">
           <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px animate-fadeInLeft">
-              <header className="text-black text-3xl md:text-4xl font-regular">
+              <header className="type-display type-bold">
                   <h1>
-                      <span className="text-3xl md:text-6xl font-bold">{t('contact.tittle')}</span>
+                      <span>{t('contact.tittle')}</span>
                   </h1>
               </header>
               <h2>
-                <span className='text-xl md:text-4xl font-light'>{t('contact.subtitle')}</span>
+                <span className='type-subtitle type-light'>{t('contact.subtitle')}</span>
               </h2>
               <div className='grid grid-cols-2 grid-rows-2 gap-2 pt-10px'>
                 {socials.map(({ icon, url, text }) => ( 
@@ -55,7 +55,7 @@ const Contact = () => {
                       href={url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className='font-light text-xl justify-center align-items-center'
+                      className='type-body-large type-light justify-center align-items-center'
                   > 
                       <FontAwesomeIcon icon={icon} size="2x" className="socials-logos" /> {text}
                   </a> 

@@ -13,7 +13,7 @@ const Projects = () => {
       <article className="text-center pt-custom-90px pb-custom-30px ml-230px-md mr-230px-md ml-mr-30px">
         <div className="flex items-center justify-center ">
           <div className="bar-custom"></div>
-          <h1 className="text-gray text-base font-light txt-20-perc">
+          <h1 className="type-body type-light color-muted txt-20-perc">
             {t('projects_container.tittle')}
           </h1>
           <div className="bar-custom"></div>
@@ -34,8 +34,8 @@ const Projects = () => {
                   className="w-full object-cover rounded-lg"
                 />
                 <div className="pt-10px">
-                  <h2 className="text-base font-normal">{project.title[currentLang]}</h2>
-                  <p className="text-sm font-light">{project.description[currentLang]}</p>
+                  <h2 className="type-body type-regular">{project.title[currentLang]}</h2>
+                  <p className="type-small type-light">{project.description[currentLang]}</p>
                 </div>
               </Link>
             </div>

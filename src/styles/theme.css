@@ -1,0 +1,168 @@
+/*
+ * Sistema visual global
+ * Edita este archivo para cambiar tipografía, colores, radios y sombras
+ * en todo el portafolio.
+ */
+:root {
+  /* Tipografía */
+  --font-family-base: 'Proxima Nova', 'Segoe UI', Arial, sans-serif;
+  --font-size-display: clamp(1.875rem, 4vw, 3.75rem);
+  --font-size-title: clamp(1.875rem, 3vw, 2.25rem);
+  --font-size-subtitle: clamp(1.25rem, 2.5vw, 2.25rem);
+  --font-size-section-title: clamp(1.25rem, 2vw, 1.5rem);
+  --font-size-body-large: clamp(1.125rem, 1.6vw, 1.40625rem);
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-label: 0.75rem;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-heading: 1.18;
+  --line-height-body: 1.55;
+  --letter-spacing-heading: 0;
+  --letter-spacing-body: 0;
+  --letter-spacing-label: 0.12em;
+
+  /* Paleta */
+  --color-text: #151922;
+  --color-text-secondary: #596071;
+  --color-text-muted: #757575;
+  --color-accent: #007aff;
+  --color-accent-hover: #005aea;
+  --color-accent-soft: #eaf4ff;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #fbfbfb;
+  --color-surface-muted: #f5f5f5;
+  --color-surface-selected: #eef2f7;
+  --color-chat-neutral: #e9e9eb;
+  --color-chat-neutral-tail: #d6d6d6;
+  --color-scroll-track: #f1f1f1;
+  --color-scroll-thumb: #cbd5e0;
+  --color-border: #dddddd;
+  --color-border-strong: #d0d0d0;
+  --color-navigation: #151922;
+  --color-navigation-menu: #323441;
+  --color-navigation-control: #343a48;
+  --color-navigation-control-hover: #49505e;
+  --color-on-dark: #ffffff;
+
+  /* Detalles y decoración */
+  --radius-small: 5px;
+  --radius-medium: 12px;
+  --radius-large: 20px;
+  --shadow-card: 0 8px 24px rgba(21, 25, 34, 0.08);
+  --shadow-elevated: 0 12px 30px rgba(21, 25, 34, 0.14);
+  --shadow-inner-top: 0 -4px 30px rgba(21, 25, 34, 0.16);
+  --transition-interactive: 0.2s ease;
+
+  /* Alias para componentes existentes */
+  --primary_black: var(--color-text);
+  --background_black: var(--color-navigation-menu);
+  --secondary_blue: var(--color-accent);
+  --white: var(--color-on-dark);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+}
+
+html {
+  color: var(--color-text);
+  background: var(--color-surface);
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  color: var(--color-text);
+  background: var(--color-surface);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+}
+
+p,
+li,
+a,
+button,
+input,
+textarea {
+  letter-spacing: var(--letter-spacing-body);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* Clases tipográficas semánticas compartidas por todas las vistas */
+.type-display,
+.type-title,
+.type-subtitle,
+.type-section-title {
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+}
+
+.type-display { font-size: var(--font-size-display); }
+.type-title { font-size: var(--font-size-title); }
+.type-subtitle { font-size: var(--font-size-subtitle); }
+.type-section-title { font-size: var(--font-size-section-title); }
+.type-body-large { font-size: var(--font-size-body-large); line-height: var(--line-height-body); }
+.type-body { font-size: var(--font-size-body); line-height: var(--line-height-body); }
+.type-small { font-size: var(--font-size-small); line-height: var(--line-height-body); }
+.type-label {
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-label);
+}
+
+.type-light { font-weight: var(--font-weight-light); }
+.type-regular { font-weight: var(--font-weight-regular); }
+.type-semibold { font-weight: var(--font-weight-semibold); }
+.type-bold { font-weight: var(--font-weight-bold); }
+
+.color-accent { color: var(--color-accent); }
+.color-muted { color: var(--color-text-muted); }
+.color-on-dark { color: var(--color-on-dark); }
+
+/* Normaliza utilidades de color heredadas de Tailwind con la paleta global. */
+.text-black { color: var(--color-text); }
+.text-white { color: var(--color-on-dark); }
+.bg-white,
+.bg-white-500 { background-color: var(--color-surface); }
+.bg-blue-500 { background-color: var(--color-accent); }
+.hover\:bg-blue-600:hover { background-color: var(--color-accent-hover); }
+.focus\:ring-blue-500:focus { --tw-ring-color: var(--color-accent); }

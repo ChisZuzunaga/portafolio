@@ -32,7 +32,7 @@ const Nav = ({ onMenuToggle }) => {
     };
 
     const { i18n, t } = useTranslation(); // Hook para traducciones
-    const currentLang = i18n.language; // Obtén el idioma actual
+    const currentLang = i18n.resolvedLanguage?.startsWith("es") ? "es" : "en";
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang); // Cambia el idioma
@@ -61,7 +61,7 @@ const Nav = ({ onMenuToggle }) => {
     return ( 
         <nav id="nav" className={`navbar ${menuOpen ? "open" : ""}`}>
             <a href="/" className="logo">
-                <p className="text-2xl md:text-4xl font-bold">Chis Zuzunaga</p>
+                <p className="type-title type-bold">Chis Zuzunaga</p>
             </a>
 
             <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
@@ -73,13 +73,13 @@ const Nav = ({ onMenuToggle }) => {
             <div className={`nav-links ${menuOpen ? "visible" : ""}`} >
                 <ul>
                     <li>
-                        <a href="/" className="text-base md:text-lg font-regular">{t('navbar.about')}</a>
+                        <a href="/" className="type-body type-regular">{t('navbar.about')}</a>
                     </li>
                     <li>
-                        <a href="/Portfolio_hero" className="text-base md:text-lg font-regular">{t('navbar.portfolio')}</a>
+                        <a href="/Portfolio_hero" className="type-body type-regular">{t('navbar.portfolio')}</a>
                     </li>
                     <li>
-                        <a href="/Contact" className="text-base md:text-lg font-regular">{t('navbar.contact')}</a>
+                        <a href="/Contact" className="type-body type-regular">{t('navbar.contact')}</a>
                     </li>
                 </ul>
                 <ul>
@@ -98,8 +98,12 @@ const Nav = ({ onMenuToggle }) => {
                     <li>
                         <div className="relative language-dropdown" ref={dropdownRef}>
                             <button
+                                type="button"
                                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                                className="flex items-center gap-2 bg-transparent text-white border border-white rounded px-2 py-1"
+                                className="language-trigger flex items-center gap-2"
+                                aria-expanded={dropdownOpen}
+                                aria-haspopup="menu"
+                                aria-label={t("navbar.language")}
                             >
                                 {currentLang === "en" ? (
                                     <img src={usaFlag} alt="English" className="w-6 h-6" />
@@ -109,24 +113,27 @@ const Nav = ({ onMenuToggle }) => {
                                 <span>{currentLang === "en" ? "English" : "Español"}</span>
                             </button>
                             {dropdownOpen && (
-                                <div className="absolute top-full mt-2 bg-white text-black rounded shadow-lg dropdown-options">
+                                <div className="dropdown-options" role="menu">
                                     {languages.map((lang) => (
-                                        <div
+                                        <button
+                                            type="button"
                                             key={lang.code}
+                                            disabled={lang.code === currentLang}
                                             onClick={() => {
                                                 if (lang.code !== currentLang) {
                                                     changeLanguage(lang.code);
                                                 }
                                             }}
-                                            className={`flex items-center gap-2 px-4 py-2 ${
+                                            className={`language-option flex items-center gap-2 ${
                                                 lang.code === currentLang
-                                                    ? "bg-gray-200 text-gray-500 pd5-p cursor-not-allowed"
-                                                    : "hover:bg-gray-100 cursor-pointer pd5-p"
+                                                    ? "is-current"
+                                                    : ""
                                             }`}
+                                            role="menuitem"
                                         >
                                             <img src={lang.flag} alt={lang.name} className="w-6 h-6" />
                                             <span>{lang.name}</span>
-                                        </div>
+                                        </button>
                                     ))}
                                 </div>
                             )}

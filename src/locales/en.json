@@ -2,7 +2,8 @@
     "navbar": {
       "about": "About",
       "portfolio": "Portfolio",
-      "contact": "Contact"
+      "contact": "Contact",
+      "language": "Select language"
     },
     "chat_portfolio": {
       "messages": [
@@ -53,5 +54,139 @@
       "email": "Email",
       "message": "Message",
       "submit": "Sumbit"
+    },
+    "resume": {
+      "eyebrow": "CURRICULUM VITAE",
+      "title": "Experience, education, and skills",
+      "subtitle": "A summary of my professional background, projects, and technical toolkit.",
+      "profileLabel": "Professional profile",
+      "role": "Civil Engineer in Computing and Informatics",
+      "download": "Download CV as PDF",
+      "location": "La Serena, Coquimbo, Chile",
+      "contact": {
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "viewProfile": "View profile"
+      },
+      "experience": {
+        "title": "Experience",
+        "items": [
+          {
+            "title": "Mobile Application Developer",
+            "organization": "UBICATE - Public transportation mobile application",
+            "period": "Oct. 2025 - Jun. 2026",
+            "details": [
+              "Developed an application for passengers and drivers with navigation tailored to each user role.",
+              "Implemented geolocation, interactive maps, routes, stops, device permissions, and QR codes using React Native, Expo, TypeScript, Supabase, and React Native Maps."
+            ]
+          },
+          {
+            "title": "Professional Internship",
+            "organization": "Comercializadora Mary Bel Gonzalez Marambio",
+            "period": "Jan. 2025 - Feb. 2025",
+            "location": "Tongoy, Coquimbo",
+            "details": [
+              "Developed a responsive website to promote seafood products, with intuitive navigation and a contact form integrated with Google Forms.",
+              "Implemented an inventory system with Python, Tkinter, and SQLite to manage products and transactions, generate reports, and automate backups."
+            ]
+          },
+          {
+            "title": "Interface and Graphic Material Designer",
+            "organization": "Talento Verde",
+            "period": "May 2024 - Dec. 2024",
+            "location": "La Serena, Coquimbo",
+            "details": [
+              "Designed mockups, interactive prototypes, and high-fidelity screens based on user needs and project requirements.",
+              "Created promotional graphic material to communicate the project's mission and value proposition."
+            ]
+          },
+          {
+            "title": "Operational Internship",
+            "organization": "KYF",
+            "period": "Jan. 2024 - Mar. 2024",
+            "location": "La Serena, Coquimbo",
+            "details": [
+              "Created user manuals for security guard monitoring applications, structuring clear procedures for users."
+            ]
+          },
+          {
+            "title": "Technical Internship",
+            "organization": "Municipality of Taltal",
+            "period": "Jan. 2020 - Mar. 2020",
+            "location": "Taltal, Antofagasta",
+            "details": [
+              "Supported the administration, classification, and organization of municipal documentation."
+            ]
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "degree": "Civil Engineer in Computing and Informatics",
+        "institution": "Universidad Central de Chile",
+        "period": "Mar. 2021 - Aug. 2026",
+        "location": "La Serena, Coquimbo"
+      },
+      "certifications": {
+        "title": "Certifications and activities",
+        "items": [
+          { "title": "Meta Front-End Developer", "organization": "Meta", "date": "Mar. 2025" },
+          { "title": "Hackathon 2024", "organization": "Researcher and Data Analyst", "date": "Nov. 2024" },
+          { "title": "Hackathon 2023", "organization": "Web Designer", "date": "Nov. 2023" }
+        ]
+      },
+      "projects": {
+        "title": "Featured projects",
+        "items": [
+          {
+            "title": "TEADORO",
+            "period": "Capstone project - 2026",
+            "stack": "ESP32-S3, FastAPI, WebSocket, and mobile application",
+            "details": [
+              "Developed an interactive technology tool to support the practice of communication skills in children with Autism Spectrum Disorder at home and under adult supervision.",
+              "Contributed to requirements gathering, architecture design, hardware and software integration, and technical testing. The prototype achieved a 98.33% operational success rate and an average response time of 2.52 seconds."
+            ]
+          },
+          {
+            "title": "Guided and Conscious Training in Artificial Intelligence",
+            "period": "Aug. 2025 - Dec. 2025",
+            "stack": "Interdisciplinary university project",
+            "details": [
+              "Trained and supported third-year Kinesiology students in the critical, guided, and responsible use of AI tools.",
+              "Collaborated on a quantitative quasi-experimental study with four levels of guidance, using surveys and rubrics."
+            ]
+          },
+          {
+            "title": "Padel Court Booking System",
+            "period": "Academic project",
+            "stack": "Web development and Kanban",
+            "details": [
+              "Contributed to the development of a system with time-slot selection, user registration, and booking confirmation, integrated across three eighth-semester courses."
+            ]
+          },
+          {
+            "title": "Sign Language Recognition",
+            "period": "Academic project",
+            "stack": "CNN and LSTM neural networks",
+            "details": [
+              "Implemented a sign language recognition prototype as the final project for the Artificial Intelligence course."
+            ]
+          }
+        ]
+      },
+      "skills": {
+        "title": "Technical skills",
+        "groups": {
+          "languages": "Languages",
+          "development": "Mobile, web, and integration development",
+          "dataHardware": "Databases, hardware, and tools",
+          "design": "Design and methodologies"
+        },
+        "items": {
+          "mockups": "Mockups",
+          "prototyping": "High-fidelity prototyping"
+        }
+      }
     }
 }

@@ -1,66 +1,57 @@
 const profileData = {
-  nombre: "Ignacio Guerra Torres",
-  contacto: {
-    ubicacion: {
-      en: "Santiago, Chile",
-      es: "Santiago, Chile",
-    },
-    email: "tu.email@ejemplo.com",
-    telefono: "+56 9 1234 5678",
+  name: "Ignacio Noel Alfonso Guerra Torres",
+  contact: {
+    email: "ignacioguerratorres@gmail.com",
+    phone: "+56 9 9378 2361",
+    phoneHref: "+56993782361",
+    github: "https://github.com/ChisZuzunaga",
     linkedin: "https://www.linkedin.com/in/ignacio-guerra-torres-409a22337/",
-    github: "https://github.com/tu-usuario",
-    cvUrl: "/cv.pdf",
+    cvUrl: "/CV_Ignacio_Guerra.pdf",
   },
-
-  resumen: {
-    en: "Developer focused on interfaces and user experience (UX/UI). I work with React and the modern web ecosystem to build accessible, fast, and scalable products.",
-    es: "Desarrollador enfocado en interfaces y experiencia de usuario (UX/UI). Trabajo con React y el ecosistema web moderno para crear productos accesibles, rápidos y escalables.",
-  },
-
-  habilidadesBlandas: {
-    en: [
-      "Effective communication",
-      "Teamwork",
-      "Time management",
-      "Adaptability",
-      "Critical thinking",
-      "User experience orientation (UX/UI)"
-    ],
-    es: [
-      "Comunicación efectiva",
-      "Trabajo en equipo",
-      "Gestión del tiempo",
-      "Adaptabilidad",
-      "Pensamiento crítico",
-      "Orientación a la experiencia de usuario (UX/UI)"
-    ]
-  },
-
-  tecnologias: [
-    { id: "react", nombre: "React", slug: "react" },
-    { id: "javascript", nombre: "JavaScript", slug: "javascript" },
-    { id: "python", nombre: "Python", slug: "python" },
-    { id: "html5", nombre: "HTML5", slug: "html5" },
-    { id: "css3", nombre: "CSS3", slug: "css3" },
-    { id: "neo4j", nombre: "Neo4j", slug: "neo4j" },
-    { id: "php", nombre: "PHP", slug: "php" },
-    { id: "kotlin", nombre: "Kotlin", slug: "kotlin" },
-    { id: "git", nombre: "Git", slug: "git" }
+  skillGroups: [
+    {
+      id: "languages",
+      items: [
+        { id: "typescript", name: "TypeScript", slug: "typescript" },
+        { id: "javascript", name: "JavaScript", slug: "javascript" },
+        { id: "python", name: "Python", slug: "python" },
+        { id: "html", name: "HTML", slug: "html5" },
+        { id: "css", name: "CSS", slug: "css3" },
+        { id: "sql", name: "SQL", slug: "sql" },
+      ],
+    },
+    {
+      id: "development",
+      items: [
+        { id: "react-native", name: "React Native", slug: "react" },
+        { id: "expo", name: "Expo", slug: "expo" },
+        { id: "react", name: "React", slug: "react" },
+        { id: "vite", name: "Vite", slug: "vite" },
+        { id: "fastapi", name: "FastAPI", slug: "fastapi" },
+        { id: "websocket", name: "WebSocket", slug: "websocket" },
+        { id: "tkinter", name: "Tkinter", slug: "tkinter" },
+      ],
+    },
+    {
+      id: "dataHardware",
+      items: [
+        { id: "supabase", name: "Supabase", slug: "supabase" },
+        { id: "sqlite", name: "SQLite", slug: "sqlite" },
+        { id: "esp32", name: "ESP32-S3", slug: "esp32" },
+        { id: "maps", name: "React Native Maps", slug: "maps" },
+        { id: "git", name: "Git", slug: "git" },
+      ],
+    },
+    {
+      id: "design",
+      items: [
+        { id: "uiux", name: "UI/UX", slug: "uiux" },
+        { id: "mockups", labelKey: "resume.skills.items.mockups", slug: "mockups" },
+        { id: "prototyping", labelKey: "resume.skills.items.prototyping", slug: "prototyping" },
+        { id: "kanban", name: "Kanban", slug: "kanban" },
+      ],
+    },
   ],
-
-  herramientas: [
-    { id: "figma", nombre: "Figma", slug: "figma" },
-    { id: "photoshop", nombre: "Adobe Photoshop", slug: "adobephotoshop" },
-    { id: "uxui", nombre: "UX/UI", slug: null, custom: "uxui" }
-  ],
-
-  certificaciones: [
-    { titulo: {en:"dd",es:"dd"}, entidad:"dd", fecha:"dd", enlace:"dd" }
-  ],
-
-  estudios: [
-    { institucion:"dd", programa:{en:"dd",es:"dd"}, periodo:"2025 - 2025", descripcion:{en:"dd",es:"dd"} }
-  ]
 };
 
 export default profileData;
