@@ -6,6 +6,7 @@ import projectsData from '../data/projectsData'; // Importa los datos
 const Projects = () => {
   const { i18n, t } = useTranslation(); // Hook para traducciones
   const currentLang = i18n.language; // Obtén el idioma actual
+  const featuredProjects = projectsData.filter((project) => project.featured).slice(0, 3);
 
   return (
     <section id="projects" className="bg-projects-custom py-10 pb-bottom-80px shadow-inner-top">
@@ -22,18 +23,23 @@ const Projects = () => {
       <article className="ml-230px-md mr-230px-md ml-mr-60px">
         {/* Grid de proyectos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
-          {projectsData.slice(0, 3).map((project) => (
+          {featuredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white shadow-md rounded-xl overflow-hidden p-10px"
+              className="bg-white shadow-md rounded-xl overflow-hidden"
             >
-              <Link to={`/project/${project.id}`}>
-                <img
-                  src={project.image}
-                  alt={project.title[currentLang]}
-                  className="w-full object-cover rounded-lg"
-                />
-                <div className="pt-10px">
+              <Link to={`/project/${project.id}`} className="block">
+                <div
+                  className="aspect-video w-full overflow-hidden"
+                  style={{ backgroundColor: project.thumbnailBackground }}
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title[currentLang]}
+                    className={`block h-full w-full object-center ${project.thumbnailFit === 'contain' ? 'object-contain' : 'scale-[1.02] object-cover'}`}
+                  />
+                </div>
+                <div className="p-10px">
                   <h2 className="type-body type-regular">{project.title[currentLang]}</h2>
                   <p className="type-small type-light">{project.description[currentLang]}</p>
                 </div>

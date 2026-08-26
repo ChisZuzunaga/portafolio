@@ -19,6 +19,20 @@ import p5_main from "../assets/galeria_thumbnail.svg";
 
 import p6_main from "../assets/robot_thumbnail.svg";
 
+import ubicate_main from "../assets/ubicate_thumbnail.png";
+import ubicate_passenger from "../assets/ubicate_passenger.png";
+import ubicate_driver from "../assets/ubicate_driver.png";
+import ubicate_qr from "../assets/ubicate_qr.png";
+
+import teadoro_main from "../assets/teadoro_thumbnail.png";
+import teadoro_adaptive from "../assets/teadoro_adaptive.png";
+import teadoro_profile from "../assets/teadoro_profile.png";
+import teadoro_manual from "../assets/teadoro_manual.png";
+
+import tiktokstats_main from "../assets/tiktokstats_thumbnail.svg";
+import tiktokstats_records from "../assets/tiktokstats_records.png";
+import tiktokstats_statistics from "../assets/tiktokstats_statistics.png";
+
 const projectsData = [
     {
       id: 1,
@@ -234,6 +248,123 @@ const projectsData = [
       image1: "https://placehold.co/980x1110",
       image2: "https://placehold.co/980x430",
       image3: "https://placehold.co/980x450",
+    },
+
+    {
+      id: 7,
+      featured: true,
+      title: {
+        en: "Ubicate",
+        es: "Ubicate",
+      },
+      description: {
+        en: "Visual design and frontend implementation for a public transportation mobile app, featuring role-specific navigation, interactive maps, routes, markers, stops, and location clusters.",
+        es: "Diseño visual e implementación frontend de una aplicación móvil de transporte público, con navegación diferenciada por rol, mapas interactivos, recorridos, marcadores, paraderos y clusters de ubicación.",
+      },
+      date: {
+        en: "October 2025 - June 2026",
+        es: "Octubre 2025 - Junio 2026",
+      },
+      project: {
+        en: "My work on Ubicate focused exclusively on the application's visual experience and mobile frontend. I designed and implemented differentiated passenger and driver interfaces, navigation flows, map views, route and stop visualization, custom markers, frequent-point indicators, and the visual states associated with location permissions. The interface was developed with React Native, Expo, TypeScript, React Navigation, and React Native Maps.",
+        es: "Mi trabajo en Ubicate se concentró exclusivamente en la experiencia visual y el frontend móvil de la aplicación. Diseñé e implementé interfaces diferenciadas para pasajeros y conductores, flujos de navegación, vistas de mapas, visualización de recorridos y paraderos, marcadores personalizados, indicadores de puntos frecuentes y los estados visuales asociados a los permisos de ubicación. La interfaz fue desarrollada con React Native, Expo, TypeScript, React Navigation y React Native Maps.",
+      },
+      challenges: {
+        en: "The main challenge was keeping information readable when many stops, frequent points, drivers, and route elements were visible at once. I implemented clustering according to map density and zoom level, differentiated each type of point through its own iconography, and refined marker, polyline, and directional-arrow behavior to keep the map clear and visually consistent.",
+        es: "El principal desafío fue mantener la información legible cuando se mostraban simultáneamente numerosos paraderos, puntos frecuentes, conductores y elementos del recorrido. Implementé clusters según la densidad y el nivel de zoom del mapa, diferencié cada tipo de punto mediante iconografía propia y ajusté el comportamiento de marcadores, polilíneas y flechas direccionales para conservar un mapa claro y visualmente consistente.",
+      },
+      extrainfo_tittle: {
+        en: "Visual and map design",
+        es: "Diseño visual y cartográfico",
+      },
+      extrainfo: {
+        en: "The visual system includes reusable components, passenger and driver variants, custom map icons, clustered stops and frequent points, route polylines, directional arrows, location indicators, and consistent light and dark interface resources. The objective was to make a complex transportation map understandable at a glance on a mobile screen.",
+        es: "El sistema visual incluye componentes reutilizables, variantes para pasajero y conductor, íconos cartográficos personalizados, clusters de paraderos y puntos frecuentes, polilíneas de recorrido, flechas direccionales, indicadores de ubicación y recursos coherentes para interfaces claras y oscuras. El objetivo fue hacer comprensible de un vistazo un mapa de transporte complejo dentro de una pantalla móvil.",
+      },
+      image: ubicate_main,
+      thumbnailFit: "contain",
+      thumbnailBackground: "#000000",
+      image1: ubicate_passenger,
+      image2: ubicate_driver,
+      image3: ubicate_qr,
+    },
+
+    {
+      id: 8,
+      featured: true,
+      title: {
+        en: "Teadoro",
+        es: "Teadoro",
+      },
+      description: {
+        en: "Interactive voice-based educational system for children aged 3 to 7, combining a React Native mobile app, an ESP32 plush toy, and real-time artificial intelligence.",
+        es: "Sistema educativo interactivo por voz para niños de 3 a 7 años que combina una aplicación móvil React Native, un peluche con ESP32 e inteligencia artificial en tiempo real.",
+      },
+      date: {
+        en: "Capstone project - 2026",
+        es: "Proyecto de título - 2026",
+      },
+      project: {
+        en: "Teadoro combines a physical plush toy with a parental-control mobile application. The ESP32 captures the child's voice, a bridge sends the audio to the OpenAI Realtime API, and the synthesized response returns to the toy. Adults can manage profiles, create adventures manually or with AI, review transcripts and reports, configure reinforcement phrases, and control the toy's connection and volume. Each adventure is organized into exactly three progressive levels with attempts, rounds, hints, and expected answers.",
+        es: "Teadoro combina un peluche físico con una aplicación móvil de control parental. El ESP32 captura la voz del niño, un bridge envía el audio a la API Realtime de OpenAI y la respuesta sintetizada regresa al juguete. Los adultos pueden administrar perfiles, crear aventuras manualmente o con IA, revisar transcripciones e informes, configurar frases de refuerzo y controlar la conexión y el volumen del peluche. Cada aventura se organiza en exactamente tres niveles progresivos con intentos, rondas, pistas y respuestas esperadas.",
+      },
+      challenges: {
+        en: "The main technical challenge was integrating BLE discovery, Wi-Fi provisioning, and a bidirectional PCM16 audio stream at 24 kHz across the mobile app, the voice bridge, and the ESP32. The experience also had to remain short, positive, family-friendly, and understandable for supervised use by young children.",
+        es: "El principal desafío técnico fue integrar descubrimiento BLE, configuración WiFi y un flujo de audio PCM16 bidireccional a 24 kHz entre la aplicación móvil, el bridge de voz y el ESP32. La experiencia también debía mantenerse breve, positiva, apta para la familia y comprensible para el uso supervisado por niños pequeños.",
+      },
+      extrainfo_tittle: {
+        en: "Technical scope",
+        es: "Alcance técnico",
+      },
+      extrainfo: {
+        en: "The solution uses React Native, Expo, TypeScript, React Context with AsyncStorage, React Navigation, BLE, Wi-Fi, WebSockets, Node.js, and the OpenAI Realtime API. It supports up to four locally stored profiles and one active ESP32 connection at a time, and can export supervised-use reports as PDF files.",
+        es: "La solución utiliza React Native, Expo, TypeScript, React Context con AsyncStorage, React Navigation, BLE, WiFi, WebSockets, Node.js y la API Realtime de OpenAI. Admite hasta cuatro perfiles almacenados localmente y una conexión ESP32 activa a la vez, y puede exportar informes de uso supervisado en formato PDF.",
+      },
+      image: teadoro_main,
+      thumbnailFit: "contain",
+      thumbnailBackground: "#eaf7fc",
+      image1: teadoro_adaptive,
+      image2: teadoro_profile,
+      image3: teadoro_manual,
+    },
+
+    {
+      id: 9,
+      featured: true,
+      title: {
+        en: "TikTok Stats",
+        es: "TikTok Stats",
+      },
+      description: {
+        en: "Local desktop dashboard that records TikTok Live gifts, links each gift to the sender's next comment, and provides real-time session analytics.",
+        es: "Panel de escritorio local que registra regalos de TikTok Live, vincula cada regalo con el siguiente comentario del remitente y entrega estadísticas de sesión en tiempo real.",
+      },
+      date: {
+        en: "August 2026",
+        es: "Agosto 2026",
+      },
+      project: {
+        en: "TikTok Stats listens to a TikTok Live room and organizes incoming gifts into a reviewable work queue. The first subsequent comment from the same participant is attached directly to the gift. Users can filter records by status and coin value, edit or delete entries, revisit saved sessions, and open a statistics view with duration, coins, gift totals, participants, top contributors, and an interactive time histogram.",
+        es: "TikTok Stats escucha una sala de TikTok Live y organiza los regalos entrantes en una cola de trabajo revisable. El primer comentario posterior de la misma persona se adjunta directamente al regalo. Los usuarios pueden filtrar registros por estado y valor en monedas, editar o eliminar entradas, revisar sesiones guardadas y abrir una vista de estadísticas con duración, monedas, total de regalos, participantes, principales colaboradores y un histograma temporal interactivo.",
+      },
+      challenges: {
+        en: "The application required a long-running TikTokLive listener, live synchronization between FastAPI and React through WebSockets, and a reliable fallback poll every 10 seconds. Packaging the React interface, Python backend, native dependencies, and database access into a single Windows executable was another central challenge.",
+        es: "La aplicación requirió un listener persistente de TikTokLive, sincronización en vivo entre FastAPI y React mediante WebSockets y un sondeo de respaldo confiable cada 10 segundos. Empaquetar la interfaz React, el backend Python, las dependencias nativas y el acceso a la base de datos en un único ejecutable de Windows fue otro desafío central.",
+      },
+      extrainfo_tittle: {
+        en: "Delivery and persistence",
+        es: "Entrega y persistencia",
+      },
+      extrainfo: {
+        en: "The distributable TikTokStats.exe includes the interface, backend, and Python dependencies, so the recipient does not need to install development tools. Session data is stored in a local SQLite database under the user's application-data directory and remains available when the executable is moved or replaced.",
+        es: "El ejecutable distribuible TikTokStats.exe incluye la interfaz, el backend y las dependencias de Python, por lo que la persona receptora no necesita instalar herramientas de desarrollo. Los datos de sesión se guardan en una base SQLite dentro del directorio local de datos de la aplicación y permanecen disponibles aunque el ejecutable se mueva o se reemplace.",
+      },
+      image: tiktokstats_main,
+      thumbnailFit: "contain",
+      thumbnailBackground: "#020617",
+      image1: tiktokstats_records,
+      image2: tiktokstats_statistics,
+      image3: tiktokstats_records,
     },
 ];
   

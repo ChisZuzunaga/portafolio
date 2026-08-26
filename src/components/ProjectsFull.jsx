@@ -25,18 +25,23 @@ const Projects = () => {
       <article className="ml-230px-md mr-230px-md ml-mr-60px">
         {/* Grid de proyectos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {projectsData.map((project) => (
+          {[...projectsData].reverse().map((project) => (
             <div
               key={project.id}
-              className="bg-white shadow-md rounded-xl overflow-hidden p-10px"
+              className="bg-white shadow-md rounded-xl overflow-hidden"
             >
-              <Link to={`/project/${project.id}`}>
-                <img
-                  src={project.image}
-                  alt={project.title[currentLang]}
-                  className="w-full object-cover rounded-md"
-                />
-                <div className="pt-10px">
+              <Link to={`/project/${project.id}`} className="block">
+                <div
+                  className="aspect-video w-full overflow-hidden"
+                  style={{ backgroundColor: project.thumbnailBackground }}
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title[currentLang]}
+                    className={`block h-full w-full object-center ${project.thumbnailFit === 'contain' ? 'object-contain' : 'scale-[1.02] object-cover'}`}
+                  />
+                </div>
+                <div className="p-10px">
                   <h2 className="type-body type-regular">{project.title[currentLang]}</h2>
                   <p className="type-small type-light">{project.description[currentLang]} </p>
                 </div>

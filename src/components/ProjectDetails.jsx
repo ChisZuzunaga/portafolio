@@ -35,7 +35,7 @@ const ProjectDetails = () => {
               {/* Imagen contenedora en el fondo */}
               <img 
                 src={project.image} 
-                alt="Contenedor" 
+                alt={project.title[currentLang]}
                 className="relative object-contain"
               />
             </div>
@@ -49,7 +49,7 @@ const ProjectDetails = () => {
             </h1>
           </article>
           <article className='mr-230px-md ml-230px-md '>
-            <img src={project.image1} className='w-full pr-170px pl-170px'/>
+            <img src={project.image1} alt={`${project.title[currentLang]} - ${t('project_info.project')}`} className='w-full pr-170px pl-170px'/>
           </article>
         </section>
 
@@ -61,7 +61,7 @@ const ProjectDetails = () => {
             </h1>
           </article>
           <article className='mr-230px-md ml-230px-md '>
-            <img src={project.image2} className='w-full pr-170px pl-170px'/>
+            <img src={project.image2} alt={`${project.title[currentLang]} - ${t('project_info.challenges')}`} className='w-full pr-170px pl-170px'/>
           </article>
         </section>
 
@@ -73,7 +73,7 @@ const ProjectDetails = () => {
             </h1>
           </article>
           <article className='mr-230px-md ml-230px-md '>
-            <img src={project.image3} className='w-full pr-170px pl-170px'/>
+            <img src={project.image3} alt={`${project.title[currentLang]} - ${project.extrainfo_tittle[currentLang]}`} className='w-full pr-170px pl-170px'/>
           </article>
         </section>
         <Projects />
