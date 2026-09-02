@@ -1,5 +1,5 @@
 const profileData = {
-  name: "Ignacio Noel Alfonso Guerra Torres",
+  name: "Ignacio Guerra",
   contact: {
     email: "ignacioguerratorres@gmail.com",
     phone: "+56 9 9378 2361",

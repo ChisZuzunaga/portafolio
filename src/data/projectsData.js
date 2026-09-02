@@ -23,8 +23,6 @@ import p5_main_1 from "../assets/p5_main_1.png";
 import p5_main_2 from "../assets/p5_main_2.png";
 import p5_main_3 from "../assets/p5_main_3.png";
 
-import p6_main from "../assets/robot_thumbnail.svg";
-
 import ubicate_main from "../assets/ubicate_thumbnail.png";
 import ubicate_passenger from "../assets/ubicate_passenger.png";
 import ubicate_driver from "../assets/ubicate_driver.png";

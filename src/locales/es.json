@@ -53,13 +53,6 @@
       "challenges": "Desafíos.",
       "project": "El Proyecto."
     },
-    "contact_input": {
-      "send": "Envíame un correo",
-      "name": "Nombre",
-      "email": "Correo Electrónico",
-      "message": "Mensaje",
-      "submit": "Enviar"
-    },
     "resume": {
       "eyebrow": "CURRÍCULUM VITAE",
       "title": "Experiencia, formación y habilidades",

@@ -1,6 +1,5 @@
 import React from 'react';
 import Chat_Contact from './Chats/Chat_Contact';
-import Input from './Input';
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { 
@@ -68,7 +67,6 @@ const Contact = () => {
               </div>
           </article>
         </section>
-        <Input />
     </>
   );
 };

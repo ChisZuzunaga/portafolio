@@ -53,13 +53,6 @@
       "challenges": "Challenges.",
       "project": "The Project."
     },
-    "contact_input": {
-      "send": "Send me an email",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Sumbit"
-    },
     "resume": {
       "eyebrow": "CURRICULUM VITAE",
       "title": "Experience, education, and skills",
