@@ -26,11 +26,11 @@ const socials = [
       url: "https://github.com/ChisZuzunaga", 
       text: "GitHub",
     },
-    { 
-      icon: faMicrosoft, 
-      url: "https://github.com/ChisZuzunaga", 
-      text: "Outlook",
-    }
+    // { 
+    //   icon: faMicrosoft, 
+    //   url: "https://github.com/ChisZuzunaga", 
+    //   text: "Outlook",
+    // }
 ]; 
 
 const Contact = () => {

@@ -12,6 +12,12 @@
         { "id": 3, "text": null, "side": "left", "gif": "cat_engineer" }
       ]
     },
+    "chat_contact": {
+      "messages": [
+        { "id": 1, "text": "Hola, ¿cómo puedo contactarte?", "side": "right" },
+        { "id": 2, "text": null, "side": "left", "gif": "cat_contact" }
+      ]
+    },
     "chat_home": {
       "messages": [
         { "id": 1, "text": "😺 Hola soy Ignacio", "side": "right" },
