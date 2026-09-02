@@ -14,6 +14,9 @@ import lengua_2 from "../assets/lengua_2.svg";
 import lengua_3 from "../assets/lengua_3.png";
 
 import p4_main from "../assets/maximar_thumbnail.svg";
+import p4_main_1 from "../assets/p4_main_1.png";
+import p4_main_2 from "../assets/p4_main_2.png";
+import p4_main_3 from "../assets/p4_main_3.png";
 
 import p5_main from "../assets/galeria_thumbnail.svg";
 import p5_main_1 from "../assets/p5_main_1.png";
@@ -176,10 +179,11 @@ const projectsData = [
         en: "The website is fully responsive and adapts well to both mobile and desktop devices. As a promotional page, it highlights the products offered by 'Maximar'.",
         es: "El sitio web es completamente responsivo y se adapta correctamente tanto a dispositivos móviles como de escritorio. Al ser una página publicitaria, se exhiben los productos que ofrece 'Maximar'."
       },
+      webUrl: "https://maximar-git-main-chis-zuzunaga.vercel.app/",
       image: p4_main,
-      image1: "https://placehold.co/980x1110",
-      image2: "https://placehold.co/980x430",
-      image3: "https://placehold.co/980x450",
+      image1: p4_main_1,
+      image2: p4_main_2,
+      image3: p4_main_3,
     },  
     
     {
@@ -219,41 +223,41 @@ const projectsData = [
       image3: p5_main_3,
     },
 
-    {
-      id: 6,
-      title: {
-        en: "Wall-Avoiding Robot",
-        es: "Robot esquivador de paredes",
-      },
-      description: {
-        en: "Built using Arduino as part of an Automation course. The project involved programming a robot to avoid obstacles and escape from a maze.",
-        es: "Construido usando Arduino como parte de un curso de Automatización. El proyecto consistía en programar un robot para esquivar obstáculos y salir de un laberinto.",
-      },
-      date: {
-        en: "July 2024",
-        es: "Julio 2024",
-      },
-      project: {
-        en: "The robot was pre-assembled and provided by the course. My task was to program it using the built-in Arduino microcontroller so that it could autonomously detect and avoid obstacles in a maze-like environment. The project helped reinforce concepts of sensors, servomotors, and autonomous movement.",
-        es: "El robot fue ensamblado previamente y entregado por la asignatura. Mi tarea consistía en programarlo mediante el microcontrolador Arduino incorporado, para que pudiera detectar y esquivar obstáculos de forma autónoma dentro de un entorno tipo laberinto. El proyecto permitió reforzar conceptos sobre sensores, servomotores y movimiento autónomo.",
-      },
-      challenges: {
-        en: "One of the main difficulties was the use of a non-original Arduino board, which behaved differently than expected and caused compatibility issues. Additionally, the robot required four AA batteries which drained quickly, complicating testing and debugging.",
-        es: "Una de las principales dificultades fue el uso de una placa Arduino no original, la cual se comportaba de manera diferente a la esperada y causaba problemas de compatibilidad. Además, el robot requería cuatro baterías AA que se agotaban rápidamente, lo que dificultaba el testeo y la depuración del código.",
-      },
-      extrainfo_tittle: {
-        en: "Extra Information",
-        es: "Información Extra",
-      },
-      extrainfo: {
-        en: "Despite the technical limitations, working with Arduino, sensors, motors, and servos was a rewarding experience. This was my first hands-on project with embedded systems.",
-        es: "A pesar de las limitaciones técnicas, trabajar con Arduino, sensores, motores y servos fue una experiencia muy gratificante. Este fue mi primer proyecto práctico con sistemas embebidos.",
-      },
-      image: p6_main,
-      image1: "https://placehold.co/980x1110",
-      image2: "https://placehold.co/980x430",
-      image3: "https://placehold.co/980x450",
-    },
+    // {
+    //   id: 6,
+    //   title: {
+    //     en: "Wall-Avoiding Robot",
+    //     es: "Robot esquivador de paredes",
+    //   },
+    //   description: {
+    //     en: "Built using Arduino as part of an Automation course. The project involved programming a robot to avoid obstacles and escape from a maze.",
+    //     es: "Construido usando Arduino como parte de un curso de Automatización. El proyecto consistía en programar un robot para esquivar obstáculos y salir de un laberinto.",
+    //   },
+    //   date: {
+    //     en: "July 2024",
+    //     es: "Julio 2024",
+    //   },
+    //   project: {
+    //     en: "The robot was pre-assembled and provided by the course. My task was to program it using the built-in Arduino microcontroller so that it could autonomously detect and avoid obstacles in a maze-like environment. The project helped reinforce concepts of sensors, servomotors, and autonomous movement.",
+    //     es: "El robot fue ensamblado previamente y entregado por la asignatura. Mi tarea consistía en programarlo mediante el microcontrolador Arduino incorporado, para que pudiera detectar y esquivar obstáculos de forma autónoma dentro de un entorno tipo laberinto. El proyecto permitió reforzar conceptos sobre sensores, servomotores y movimiento autónomo.",
+    //   },
+    //   challenges: {
+    //     en: "One of the main difficulties was the use of a non-original Arduino board, which behaved differently than expected and caused compatibility issues. Additionally, the robot required four AA batteries which drained quickly, complicating testing and debugging.",
+    //     es: "Una de las principales dificultades fue el uso de una placa Arduino no original, la cual se comportaba de manera diferente a la esperada y causaba problemas de compatibilidad. Además, el robot requería cuatro baterías AA que se agotaban rápidamente, lo que dificultaba el testeo y la depuración del código.",
+    //   },
+    //   extrainfo_tittle: {
+    //     en: "Extra Information",
+    //     es: "Información Extra",
+    //   },
+    //   extrainfo: {
+    //     en: "Despite the technical limitations, working with Arduino, sensors, motors, and servos was a rewarding experience. This was my first hands-on project with embedded systems.",
+    //     es: "A pesar de las limitaciones técnicas, trabajar con Arduino, sensores, motores y servos fue una experiencia muy gratificante. Este fue mi primer proyecto práctico con sistemas embebidos.",
+    //   },
+    //   image: p6_main,
+    //   image1: "https://placehold.co/980x1110",
+    //   image2: "https://placehold.co/980x430",
+    //   image3: "https://placehold.co/980x450",
+    // },
 
     {
       id: 7,

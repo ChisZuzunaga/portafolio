@@ -9,8 +9,7 @@
       "messages": [
         { "id": 1, "text": "Can u show me ur projects 😺", "side": "left" },
         { "id": 2, "text": "Give me a momment 🐈", "side": "right" },
-        { "id": 3, "text": null, "side": "left", "gif": "cat_engineer" },
-        { "id": 4, "text": "?", "side": "right", "isReaction": true }
+        { "id": 3, "text": null, "side": "left", "gif": "cat_engineer" }
       ]
     },
     "chat_home": {

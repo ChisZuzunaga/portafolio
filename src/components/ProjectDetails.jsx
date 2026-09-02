@@ -42,7 +42,7 @@ const ProjectDetails = () => {
               <img 
                 src={project.image} 
                 alt={project.title[currentLang]}
-                className="relative object-contain"
+                className={`relative object-contain ${project.thumbnailFit === 'contain' ? 'max-w-[80%] md:max-w-[65%] max-h-[65vh]' : ''}`}
               />
             </div>
           </article>
