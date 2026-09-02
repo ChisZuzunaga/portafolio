@@ -21,7 +21,13 @@ const ProjectDetails = () => {
           <article className="bg-white-500 ml-230px-md sm-m-custom-5 mt-100px-md md:text-left text-center pt-custom-40px animate-fadeInRight">
               <header className="type-display type-bold">
                   <h1>
-                      <span>{project.title[currentLang]}</span>
+                      {project.webUrl ? (
+                        <a href={project.webUrl} target="_blank" rel="noreferrer">
+                          {project.title[currentLang]}
+                        </a>
+                      ) : (
+                        <span>{project.title[currentLang]}</span>
+                      )}
                       <div className='bar-custom'></div>
                       <span className='type-small type-light color-muted flex justify-end'>{project.date[currentLang]}</span>
                   </h1>

@@ -16,6 +16,9 @@ import lengua_3 from "../assets/lengua_3.png";
 import p4_main from "../assets/maximar_thumbnail.svg";
 
 import p5_main from "../assets/galeria_thumbnail.svg";
+import p5_main_1 from "../assets/p5_main_1.png";
+import p5_main_2 from "../assets/p5_main_2.png";
+import p5_main_3 from "../assets/p5_main_3.png";
 
 import p6_main from "../assets/robot_thumbnail.svg";
 
@@ -32,6 +35,7 @@ import teadoro_manual from "../assets/teadoro_manual.png";
 import tiktokstats_main from "../assets/tiktokstats_thumbnail.svg";
 import tiktokstats_records from "../assets/tiktokstats_records.png";
 import tiktokstats_statistics from "../assets/tiktokstats_statistics.png";
+import tiktokstats_stats from "../assets/tiktokstats_stats.png";
 
 const projectsData = [
     {
@@ -208,10 +212,11 @@ const projectsData = [
         en: "All the images used in this project were selected from my personal Pinterest collection.",
         es: "Todas las imágenes utilizadas en este proyecto fueron seleccionadas de mi colección personal en Pinterest."
       },
+      webUrl: "https://megagaleriaqueso-ablcjcbzq-chis-zuzunaga.vercel.app/",
       image: p5_main,
-      image1: "https://placehold.co/980x1110",
-      image2: "https://placehold.co/980x430",
-      image3: "https://placehold.co/980x450",
+      image1: p5_main_1,
+      image2: p5_main_2,
+      image3: p5_main_3,
     },
 
     {
@@ -364,7 +369,7 @@ const projectsData = [
       thumbnailBackground: "#020617",
       image1: tiktokstats_records,
       image2: tiktokstats_statistics,
-      image3: tiktokstats_records,
+      image3: tiktokstats_stats,
     },
 ];
   
