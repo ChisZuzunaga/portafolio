@@ -23,6 +23,7 @@ function App() {
         <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home_Hero />} />
+            <Route path="/portfolio_hero" element={<Portfolio_Hero />} />
             <Route path="/Portfolio_hero" element={<Portfolio_Hero />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/project/:id" element={<ProjectDetails />} />

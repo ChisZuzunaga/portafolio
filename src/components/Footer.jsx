@@ -36,7 +36,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="/Portfolio_hero" className="hover:underline pdlr-50px">
+          <a href="/portfolio_hero" className="hover:underline pdlr-50px">
             {t('navbar.portfolio')}
           </a>
         </li>

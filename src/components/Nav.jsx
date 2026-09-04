@@ -76,7 +76,7 @@ const Nav = ({ onMenuToggle }) => {
                         <a href="/" className="type-body type-regular">{t('navbar.about')}</a>
                     </li>
                     <li>
-                        <a href="/Portfolio_hero" className="type-body type-regular">{t('navbar.portfolio')}</a>
+                        <a href="/portfolio_hero" className="type-body type-regular">{t('navbar.portfolio')}</a>
                     </li>
                     <li>
                         <a href="/Contact" className="type-body type-regular">{t('navbar.contact')}</a>
